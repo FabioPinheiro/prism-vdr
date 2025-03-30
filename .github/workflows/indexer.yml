@@ -1,18 +1,8 @@
 name: PRISM Indexer
-run-name: PRISM Indexer ${{ matrix.network }}
+run-name: PRISM Indexer
 
 on:
-  workflow_dispatch:
-    inputs:
-      network:
-        description: "network: mainnet|preview|preprod"
-        required: true
-        type: choice
-        default: 'mainnet'
-        options: 
-        - mainnet
-        - preview
-        - preprod
+  workflow_dispatch: # No inputs needed since it always runs all networks
   schedule:
     - cron: "*/5 * * * *" # Every 5 minutes for all networks
 
@@ -20,21 +10,47 @@ jobs:
   indexer-job:
     name: Indexer job
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        network: [mainnet, preview, preprod]
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/cache@v4
         with:
           path: .
-          key: cache-git-${{ matrix.network }}
-      - uses: actions/checkout@v4
-      - name: Run Indexer inside Docker
+          key: cache-git
+
+      # Subtask for mainnet
+      - name: Run Indexer for mainnet
         uses: addnab/docker-run-action@v3
         with:
-            image: fmgp/prism-indexer:latest
-            options: -v ${{ github.workspace }}/${{ matrix.network }}:/data
-            run: |
-              java -XX:+UseContainerSupport -jar /prism-indexer.jar ./data ${{ matrix.network }} ${{ matrix.network == 'mainnet' && secrets.BLOCKFROST_APIKEY_MAINNET || matrix.network == 'preview' && secrets.BLOCKFROST_APIKEY_PREVIEW || secrets.BLOCKFROST_APIKEY
+          image: fmgp/prism-indexer:latest
+          options: -v ${{ github.workspace }}/mainnet:/data
+          run: |
+            java -XX:+UseContainerSupport -jar /prism-indexer.jar ./data mainnet ${{ secrets.BLOCKFROST_APIKEY_MAINNET }}
+
+      # Subtask for preview
+      - name: Run Indexer for preview
+        uses: addnab/docker-run-action@v3
+        with:
+          image: fmgp/prism-indexer:latest
+          options: -v ${{ github.workspace }}/preview:/data
+          run: |
+            java -XX:+UseContainerSupport -jar /prism-indexer.jar ./data preview ${{ secrets.BLOCKFROST_APIKEY_PREVIEW }}
+
+      # Subtask for preprod
+      - name: Run Indexer for preprod
+        uses: addnab/docker-run-action@v3
+        with:
+          image: fmgp/prism-indexer:latest
+          options: -v ${{ github.workspace }}/preprod:/data
+          run: |
+            java -XX:+UseContainerSupport -jar /prism-indexer.jar ./data preprod ${{ secrets.BLOCKFROST_APIKEY_PREPROD }}
+
+      - run: |
+          rm semicolon_delimited_script #cleanup addnab/docker-run-action action
+          git status
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        id: auto-commit-action
+        with:
+          commit
