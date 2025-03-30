@@ -1,5 +1,5 @@
 name: PRISM Indexer
-run-name: PRISM Indexer ${{ inputs.network || 'mainnet' }}
+run-name: PRISM Indexer ${{ matrix.network }}
 
 on:
   workflow_dispatch:
@@ -14,39 +14,27 @@ on:
         - preview
         - preprod
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *" # Every 5 minutes for all networks
 
 jobs:
   indexer-job:
     name: Indexer job
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        network: [mainnet, preview, preprod]
     permissions:
       contents: write
     steps:
       - uses: actions/cache@v4
         with:
           path: .
-          key: cache-git
+          key: cache-git-${{ matrix.network }}
       - uses: actions/checkout@v4
       - name: Run Indexer inside Docker
         uses: addnab/docker-run-action@v3
         with:
             image: fmgp/prism-indexer:latest
-            options: -v ${{ github.workspace }}/${{ inputs.network || 'mainnet' }}:/data
+            options: -v ${{ github.workspace }}/${{ matrix.network }}:/data
             run: |
-              java -XX:+UseContainerSupport -jar /prism-indexer.jar ./data ${{ inputs.network || 'mainnet' }} ${{ inputs.network == 'mainnet' && secrets.BLOCKFROST_APIKEY_MAINNET || inputs.network == 'preview' && secrets.BLOCKFROST_APIKEY_PREVIEW || secrets.BLOCKFROST_APIKEY_PREPROD }}
-      - run: |
-          rm semicolon_delimited_script #cleanup addnab/docker-run-action action
-          git status
-
-      - uses: stefanzweifel/git-auto-commit-action@v5
-        id: auto-commit-action
-        with:
-          commit_message: Indexer job (${{inputs.network || 'mainnet'}})
-      - name: "Run if changes have been detected"
-        if: steps.auto-commit-action.outputs.changes_detected == 'true'
-        run: echo "Changes!"
-      
-      - name: "Run if no changes have been detected"
-        if: steps.auto-commit-action.outputs.changes_detected == 'false'
-        run: echo "No Changes!"
+              java -XX:+UseContainerSupport -jar /prism-indexer.jar ./data ${{ matrix.network }} ${{ matrix.network == 'mainnet' && secrets.BLOCKFROST_APIKEY_MAINNET || matrix.network == 'preview' && secrets.BLOCKFROST_APIKEY_PREVIEW || secrets.BLOCKFROST_APIKEY
