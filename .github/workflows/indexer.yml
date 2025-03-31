@@ -2,7 +2,7 @@ name: PRISM Indexer
 run-name: PRISM Indexer
 
 on:
-  workflow_dispatch: # No inputs needed since it always runs all networks
+  workflow_dispatch:
   schedule:
     - cron: "*/5 * * * *" # Every 5 minutes for all networks
 
@@ -46,11 +46,20 @@ jobs:
           run: |
             java -XX:+UseContainerSupport -jar /prism-indexer.jar ./data preprod ${{ secrets.BLOCKFROST_APIKEY_PREPROD }}
 
-      - run: |
-          rm semicolon_delimited_script #cleanup addnab/docker-run-action action
+      - name: Cleanup docker-run-action artifacts
+        run: |
+          rm -f semicolon_delimited_script
           git status
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         id: auto-commit-action
         with:
-          commit
+          commit_message: Indexer job (all networks)
+
+      - name: Check for changes detected
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        run: echo "Changes!"
+
+      - name: Check for no changes detected
+        if: steps.auto-commit-action.outputs.changes_detected == 'false'
+        run: echo "No Changes!"
