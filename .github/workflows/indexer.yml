@@ -20,6 +20,12 @@ jobs:
           key: cache-git
 
       # Subtask for mainnet
+      - name: "check is BLOCKFROST_APIKEY_MAINNET exists"
+        env: 
+          check_secret: ${{ secrets.BLOCKFROST_APIKEY_MAINNET }}
+        if: ${{ env.check_secret == '' }}
+        run: 'echo "echo the secret \"BLOCKFROST_APIKEY_MAINNET\" has not been setup; echo please go to \"settings \> secrets \> actions\" to create it"
+
       - name: Run Indexer for mainnet
         uses: addnab/docker-run-action@v3
         with:
@@ -29,6 +35,12 @@ jobs:
             java -XX:+UseContainerSupport -jar /prism-indexer.jar ./data mainnet ${{ secrets.BLOCKFROST_APIKEY_MAINNET }}
 
       # Subtask for preview
+      - name: "check is BLOCKFROST_APIKEY_PREVIEW exists"
+        env: 
+          check_secret: ${{ secrets.BLOCKFROST_APIKEY_PREVIEW }}
+        if: ${{ env.check_secret == '' }}
+        run: 'echo "echo the secret \"BLOCKFROST_APIKEY_PREVIEW\" has not been setup; echo please go to \"settings \> secrets \> actions\" to create it"
+  
       - name: Run Indexer for preview
         uses: addnab/docker-run-action@v3
         with:
@@ -38,6 +50,12 @@ jobs:
             java -XX:+UseContainerSupport -jar /prism-indexer.jar ./data preview ${{ secrets.BLOCKFROST_APIKEY_PREVIEW }}
 
       # Subtask for preprod
+      - name: "check is BLOCKFROST_APIKEY_PREPROD exists"
+        env: 
+          check_secret: ${{ secrets.BLOCKFROST_APIKEY_PREPROD }}
+        if: ${{ env.check_secret == '' }}
+        run: 'echo "echo the secret \"BLOCKFROST_APIKEY_PREPROD\" has not been setup; echo please go to \"settings \> secrets \> actions\" to create it"
+
       - name: Run Indexer for preprod
         uses: addnab/docker-run-action@v3
         with:
