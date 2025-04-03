@@ -24,7 +24,7 @@ jobs:
         env: 
           check_secret: ${{ secrets.BLOCKFROST_APIKEY_MAINNET }}
         if: ${{ env.check_secret == '' }}
-        run: 'echo "echo the secret \"BLOCKFROST_APIKEY_MAINNET\" has not been setup; echo please go to \"settings \> secrets \> actions\" to create it"
+        run: 'echo "echo the secret \"BLOCKFROST_APIKEY_MAINNET\" has not been setup; echo please go to \"settings \> secrets \> actions\" to create it"'
 
       - name: Run Indexer for mainnet
         uses: addnab/docker-run-action@v3
@@ -39,7 +39,7 @@ jobs:
         env: 
           check_secret: ${{ secrets.BLOCKFROST_APIKEY_PREVIEW }}
         if: ${{ env.check_secret == '' }}
-        run: 'echo "echo the secret \"BLOCKFROST_APIKEY_PREVIEW\" has not been setup; echo please go to \"settings \> secrets \> actions\" to create it"
+        run: 'echo "echo the secret \"BLOCKFROST_APIKEY_PREVIEW\" has not been setup; echo please go to \"settings \> secrets \> actions\" to create it"'
   
       - name: Run Indexer for preview
         uses: addnab/docker-run-action@v3
@@ -54,7 +54,7 @@ jobs:
         env: 
           check_secret: ${{ secrets.BLOCKFROST_APIKEY_PREPROD }}
         if: ${{ env.check_secret == '' }}
-        run: 'echo "echo the secret \"BLOCKFROST_APIKEY_PREPROD\" has not been setup; echo please go to \"settings \> secrets \> actions\" to create it"
+        run: 'echo "echo the secret \"BLOCKFROST_APIKEY_PREPROD\" has not been setup; echo please go to \"settings \> secrets \> actions\" to create it"'
 
       - name: Run Indexer for preprod
         uses: addnab/docker-run-action@v3
