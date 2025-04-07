@@ -6,6 +6,10 @@ on:
   schedule:
     - cron: "*/5 * * * *" # Every 5 minutes for all networks
 
+concurrency: # There can be at most one running and one pending job in a concurrency group at any time.
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
 jobs:
   indexer-job:
     name: Indexer job
