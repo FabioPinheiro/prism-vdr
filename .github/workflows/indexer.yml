@@ -4,7 +4,7 @@ run-name: PRISM Indexer
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *" # Every 5 minutes for all networks
+    - cron: "*/10 * * * *" # Every 10 minutes for all networks
 
 concurrency: # There can be at most one running and one pending job in a concurrency group at any time.
   group: ${{ github.workflow }}
@@ -17,11 +17,12 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
       - uses: actions/cache@v4
         with:
-          path: .
+          path: . # this will replace the folder '.git' and the AUTHORIZATION token (for job)
           key: cache-git
+
+      - uses: actions/checkout@v4
 
       # Subtask for mainnet
       - name: "check is BLOCKFROST_APIKEY_MAINNET exists"
