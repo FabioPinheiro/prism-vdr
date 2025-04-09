@@ -1,0 +1,68 @@
+{
+  "did" : "did:prism:459f425d9bbb2beb7db2f9310f0d29743eb8e6aeb6a454860efa8b59f0ab2400",
+  "latestHash" : "459f425d9bbb2beb7db2f9310f0d29743eb8e6aeb6a454860efa8b59f0ab2400",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1a",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03c0a82c308c5c79954fe43397e53f6596c2e09ee7b06c40b7de5a18509ac8225e"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2a",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0392e2a58e0b089363e61886e69a8d714332e74f07a0781f8bbf3e9a68b43ba368"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "16d79d22ca5a0757a5696699ae6317e1365ff942243119f78d72c72c4b32a94d"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "6e54b8109c2e468d79fe1b4e3d25662e6b0c0204a767252c75cc7aaa31ae5857"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-3",
+        "usage" : "KeyagreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "253deed86325f21d3727d1744215901f7888de4563116a39168639810f8a8636"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "027e381b3a3a4b4bd791489e54664e6be71a446fa808c55d89496e4c67553db453"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "[\"https://csign.io/agreement/111/0x8fcf141d5fe682dbe3dd0f0735531f78cae7d9ff22a87c8a7351339df0ca81fd\"]"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "http://cloud-agent:8085"
+    }
+  ],
+  "context" : [],
+  "disabled" : false
+}
