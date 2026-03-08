@@ -1,0 +1,48 @@
+{
+  "did" : "did:prism:b9e845cbf0e2854dec22836ebc495f885dcd42fe3a8d4ef6186aea77abbdcac3",
+  "latestHash" : "b9e845cbf0e2854dec22836ebc495f885dcd42fe3a8d4ef6186aea77abbdcac3",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0384fcfff0c1569cd0f8567ba72b32cea14c2268c00fe5b194797757f6b38b412f"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "023bd5a61d8c4cd565e6abb5978dea9d1ffc117c744eafc88486b9b1a7f8556921"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "028bcbf5bca75512c6365e1e6668415e75d19a2522d23d741f2f8d895aa69fe8cd"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "[\"https://csign.io/agreement/87/0x6b0ed3fae25420b805100c815c78f3f00d6edaffd28fdf29427be53f45231063\"]"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "http://cloud-agent:8085"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6463,
+    "o" : 0
+  }
+}

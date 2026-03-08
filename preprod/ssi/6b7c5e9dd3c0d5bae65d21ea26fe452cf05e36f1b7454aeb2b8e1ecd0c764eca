@@ -1,0 +1,46 @@
+{
+  "did" : "did:prism:6b7c5e9dd3c0d5bae65d21ea26fe452cf05e36f1b7454aeb2b8e1ecd0c764eca",
+  "latestHash" : "bfcc8f99e498dae599096adc5fc89de1f07c4f4f093ea02475d035cb959db9ee",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0273f9fadc3af704795c7804882a77eeccbea9efb74cac439655a7d3488883a9d6"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03ad2d2023a4b7d95b7ff703bf9a13bcdb4a0089bf3a5f9c4a12267251a9e9c52c"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "028ece9cd2cb78566834724e9bb95a3c2ada1b01e316c0233357e93474d5729ef7"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomain",
+      "serviceEndpoint" : "https://workflow.blocktrust.dev"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17108,
+    "o" : 0
+  }
+}

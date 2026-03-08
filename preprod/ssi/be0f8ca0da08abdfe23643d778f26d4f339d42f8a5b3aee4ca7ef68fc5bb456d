@@ -1,0 +1,35 @@
+{
+  "did" : "did:prism:be0f8ca0da08abdfe23643d778f26d4f339d42f8a5b3aee4ca7ef68fc5bb456d",
+  "latestHash" : "c2838e5e304ccb30a24036b3f10363216f2922b155fd20659dd3468f7ef61e80",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "023a7033f87babcfef0c2bf8e3bd759f7995e52d15e8c627e5ddf43281da17d619"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02d99ab70b953d6e46489f8592642984d87e3a1ce2e3d7a39c7ae412636a37afda"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://updatedendpoint.com/"
+    }
+  ],
+  "context" : [],
+  "disabled" : true,
+  "cursor" : {
+    "b" : 6511,
+    "o" : 0
+  }
+}

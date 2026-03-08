@@ -1,0 +1,46 @@
+{
+  "did" : "did:prism:ccfb7ef1d871569cb98b119eb30a31faa8a91ac89530ef81fa4072ad7e878123",
+  "latestHash" : "ccfb7ef1d871569cb98b119eb30a31faa8a91ac89530ef81fa4072ad7e878123",
+  "keys" : [
+    {
+      "UncompressedECKey" : {
+        "id" : "key1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "5a7066f0b7801593b00635933d04d7fada8243269e6128e6bb4930ea7399056c",
+        "y" : "aa5df0fc48f511d35d614ae338c45bb844af50f3efdc9b8d40caa051c65f117b"
+      }
+    },
+    {
+      "UncompressedECKey" : {
+        "id" : "key2",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "3d687687a7ba5c9e2ed1adbdd1de560750417695d6bdc37204a2f316c550760b",
+        "y" : "40ba77b7d8bdd8303b045f496256c75e2d111d6c6bdf2c711e2b23128cc48c8b"
+      }
+    },
+    {
+      "UncompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "c7e52efefa30123d2132729ad29068eeee64386e3b2b191fdb85a6c4f41915f6",
+        "y" : "04151812ffd4b64fefe9962c01fec31375e6440673993e8336b95772ac12c7c9"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "did:prism:test1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://test1.com/"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 5134,
+    "o" : 0
+  }
+}

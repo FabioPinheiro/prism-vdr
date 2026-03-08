@@ -1,0 +1,48 @@
+{
+  "did" : "did:prism:da3a4921f38a3ba32fd66bd7fb327358f7f23f317fbc0ef87c05e5c884d2e927",
+  "latestHash" : "5149f5c8f3ab05527a74aacd4020d2cbecabba756bbed0557bd59e35175e57ed",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02638187efbf9a73f70e94c23dbed6060cdbf125bd16cfaedf4e5a5faf4e07c4d4"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key2",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02484af1600ab1127d5dfb4f3406903bd78be747bcbcf3713e36fdabe7e09452ee"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0336238ae716669f28443832595f468a9d47d9625c87154967f10242e594f87c88"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "did:prism:test2",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://test2.updated.com/"
+    },
+    {
+      "id" : "did:prism:test3added",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://bar.example.com/"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 5659,
+    "o" : 0
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "did" : "did:prism:bf643dfb5c0aa2fedc8d71a8d338cc472a1d29c9de1737c9214705feab4e4440",
+  "latestHash" : "bf643dfb5c0aa2fedc8d71a8d338cc472a1d29c9de1737c9214705feab4e4440",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "025edfc215b25844a8428e6c5ac0132fde954b767a3f288803cfe2de211fcc654e"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03a851122cdfda10395bc7804f0ee355a7398953f0073a74211ef74a2859838e9f"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03630ef3a27bb1b554afb8352a54358226d99ce9ab7a5dbac695e0f40861ae42cc"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://kyosodao.io/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "https://host.docker.internal:8080/cloud-agent"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17117,
+    "o" : 0
+  }
+}

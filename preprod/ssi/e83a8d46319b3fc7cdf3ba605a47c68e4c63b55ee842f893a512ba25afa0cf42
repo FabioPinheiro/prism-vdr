@@ -1,0 +1,77 @@
+{
+  "did" : "did:prism:e83a8d46319b3fc7cdf3ba605a47c68e4c63b55ee842f893a512ba25afa0cf42",
+  "latestHash" : "22b657d5d0f8caa0bb0affd0d0d8dc179419c6d41bfbfcdfde68d0f2211a4626",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02bbce16b418f3f9cb460afb32126e55f1d1a3a3f92b4c3ad281518248228f975c"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02305ea141728d0ca7be3789b1b16c4d7435904afe969b21475c56e85173dc6ac1"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "d90043e4d3d65905c32d3dce3982d2f70bcb9c9739e0b04618aa7579625d37b6"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-3",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "3c768cb259d811af0f95142b56701abc67923c95cf17611e58d7f9cf77d8b73f"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-3a",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "c7645dccf871b7752ffd25416d5dfcdb3a9a326a94c4ca38cab3b9f93fd94d65"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1b",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0300bceb35dd5c71d3d70579a255b1e1e223011e9d928950b257d92b95b59d74e7"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    },
+    {
+      "id" : "service-2",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1",
+    "https://identity.foundation/.well-known/did-configuration/v1",
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 16980,
+    "o" : 0
+  }
+}

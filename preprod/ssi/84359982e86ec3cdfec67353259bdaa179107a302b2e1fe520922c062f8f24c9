@@ -1,0 +1,40 @@
+{
+  "did" : "did:prism:84359982e86ec3cdfec67353259bdaa179107a302b2e1fe520922c062f8f24c9",
+  "latestHash" : "63273b0718a18ca86efa9f50786d5c11b4162f9b1b629097543088af66c68dc2",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "034bc2ad1aaa65ca6d2f3e4d9f7a58e4aaa3c70a4d8c73081cfe96fd347a0a2ec6"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02fd819a54d729779ee604eee5ae55bce567c269212281ea22c2759f97da6059e0"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "0b9713882d807e73a4bc2a65a40c6d6b47ff267abc6e2606f98819c1c0c678a6"
+      }
+    }
+  ],
+  "services" : [],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17063,
+    "o" : 0
+  }
+}

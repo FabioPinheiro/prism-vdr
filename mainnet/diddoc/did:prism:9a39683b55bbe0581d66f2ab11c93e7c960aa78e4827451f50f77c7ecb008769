@@ -1,0 +1,28 @@
+{
+  "id" : "did:prism:9a39683b55bbe0581d66f2ab11c93e7c960aa78e4827451f50f77c7ecb008769",
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:9a39683b55bbe0581d66f2ab11c93e7c960aa78e4827451f50f77c7ecb008769#key-1",
+      "controller" : "did:prism:9a39683b55bbe0581d66f2ab11c93e7c960aa78e4827451f50f77c7ecb008769",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "43oEE17fKxYhtJw99RnLolutEsgSGIWJjoZFTp5CeLY",
+        "kid" : "did:prism:9a39683b55bbe0581d66f2ab11c93e7c960aa78e4827451f50f77c7ecb008769#key-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://example.com/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "https://agent.socious.io/cloud-agent"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id" : "did:prism:506d8f8e01bd0748a1d05e2693aebb8487f12165bcaa618f2162e7c24bd48f86",
+  "authentication" : [
+    {
+      "id" : "did:prism:506d8f8e01bd0748a1d05e2693aebb8487f12165bcaa618f2162e7c24bd48f86#key-1",
+      "controller" : "did:prism:506d8f8e01bd0748a1d05e2693aebb8487f12165bcaa618f2162e7c24bd48f86",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "hpCJ40EzT5fEsLirJT-Q88_FUlMOEWtmmQK0VA00NE8",
+        "y" : "Oev1W7nA7xM-vfayGXt3rK2DfyjjixvU2vOskChsNJw",
+        "kid" : "did:prism:506d8f8e01bd0748a1d05e2693aebb8487f12165bcaa618f2162e7c24bd48f86#key-1"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:506d8f8e01bd0748a1d05e2693aebb8487f12165bcaa618f2162e7c24bd48f86#key-2",
+      "controller" : "did:prism:506d8f8e01bd0748a1d05e2693aebb8487f12165bcaa618f2162e7c24bd48f86",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "kfasNflr5xJQITb8GoUbyZDSq0qx_vpjxVMV-RhamFk",
+        "y" : "2fu1Fp8x1Vg-eCrTcoWiwYASVB2x4j-vLWTMxG2V7WI",
+        "kid" : "did:prism:506d8f8e01bd0748a1d05e2693aebb8487f12165bcaa618f2162e7c24bd48f86#key-2"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "[\"https://csign.io/agreement/124/0x8fcf141d5fe682dbe3dd0f0735531f78cae7d9ff22a87c8a7351339df0ca81fd\"]"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "http://cloud-agent:8085"
+    }
+  ]
+}

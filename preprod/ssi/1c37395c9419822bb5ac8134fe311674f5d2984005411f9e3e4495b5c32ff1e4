@@ -1,0 +1,32 @@
+{
+  "did" : "did:prism:1c37395c9419822bb5ac8134fe311674f5d2984005411f9e3e4495b5c32ff1e4",
+  "latestHash" : "1c37395c9419822bb5ac8134fe311674f5d2984005411f9e3e4495b5c32ff1e4",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "031a9b908da9c66c834dbc1a6b9f216460c26590a8c5762c16f49ec9b4d2154ade"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03dfb98bc13185b85c89be1dc8d0aad600d3e80525b2544d4cd9f244e808f610b2"
+      }
+    }
+  ],
+  "services" : [],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17061,
+    "o" : 0
+  }
+}

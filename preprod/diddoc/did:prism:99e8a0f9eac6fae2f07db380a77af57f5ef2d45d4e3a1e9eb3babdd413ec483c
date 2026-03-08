@@ -1,0 +1,28 @@
+{
+  "id" : "did:prism:99e8a0f9eac6fae2f07db380a77af57f5ef2d45d4e3a1e9eb3babdd413ec483c",
+  "authentication" : [
+    {
+      "id" : "did:prism:99e8a0f9eac6fae2f07db380a77af57f5ef2d45d4e3a1e9eb3babdd413ec483c#key-1",
+      "controller" : "did:prism:99e8a0f9eac6fae2f07db380a77af57f5ef2d45d4e3a1e9eb3babdd413ec483c",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "xmsqqrqFOzsoVqYq6k1WGfrE4S8Ph1RgUDgHWTkfzz4",
+        "kid" : "did:prism:99e8a0f9eac6fae2f07db380a77af57f5ef2d45d4e3a1e9eb3babdd413ec483c#key-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "http://cloud-agent:8085"
+    }
+  ]
+}

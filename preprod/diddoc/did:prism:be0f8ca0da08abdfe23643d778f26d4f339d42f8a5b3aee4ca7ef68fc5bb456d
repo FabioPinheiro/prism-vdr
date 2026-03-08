@@ -1,0 +1,24 @@
+{
+  "id" : "did:prism:be0f8ca0da08abdfe23643d778f26d4f339d42f8a5b3aee4ca7ef68fc5bb456d",
+  "authentication" : [
+    {
+      "id" : "did:prism:be0f8ca0da08abdfe23643d778f26d4f339d42f8a5b3aee4ca7ef68fc5bb456d#key-1",
+      "controller" : "did:prism:be0f8ca0da08abdfe23643d778f26d4f339d42f8a5b3aee4ca7ef68fc5bb456d",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "OnAz-Hurz-8MK_jjvXWfeZXlLRXoxifl3fQygdoX1hk",
+        "y" : "TfJxE4zGXwh8wwDV5_4ywUK6YhcrD_DcfVzRzB8Hm2Q",
+        "kid" : "did:prism:be0f8ca0da08abdfe23643d778f26d4f339d42f8a5b3aee4ca7ef68fc5bb456d#key-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://updatedendpoint.com/"
+    }
+  ]
+}

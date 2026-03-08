@@ -1,0 +1,48 @@
+{
+  "did" : "did:prism:b4a64c37bb3d22c50ecd9234ede2bfbb74f7b7dcda73ea9b69daeeb9d99e2d10",
+  "latestHash" : "ed0f00ac33a6bd7c0ac60082911cc99b3d7a1e56719475ed768a21c107b84356",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0346e9adaf4677026963a87dcc4d2c7569ef5e667f8dd3c64c88286ee389a260f9"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03a60b9da6d4e592536e76f9c9804ef8979b8e6b7b786335d0533915d9c6d58b02"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-3",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0353a75e04ee8f40e80e37a901cecc70a09a81932fcd742ce00842f5a922dad99f"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://some.com/"
+    },
+    {
+      "id" : "service-2",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://example22.com/"
+    }
+  ],
+  "context" : [],
+  "disabled" : true,
+  "cursor" : {
+    "b" : 6571,
+    "o" : 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id" : "did:prism:40511666e6852dc6962653c5f92d915bb556a43183070dfe07e62cf2caace4a6",
+  "authentication" : [
+    {
+      "id" : "did:prism:40511666e6852dc6962653c5f92d915bb556a43183070dfe07e62cf2caace4a6#key1",
+      "controller" : "did:prism:40511666e6852dc6962653c5f92d915bb556a43183070dfe07e62cf2caace4a6",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "e2nkYiUa0rA9HzhkdtlAyYyRCXD3d-v2xVhXA891P_8",
+        "y" : "NjDwIz9k-oLOMwL7hA5mabjxAqHBPxMhTrJexnj7dvk",
+        "kid" : "did:prism:40511666e6852dc6962653c5f92d915bb556a43183070dfe07e62cf2caace4a6#key1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "https://bg65j.atalaprism.io/prism-agent",
+      "type" : "MediatorService",
+      "serviceEndpoint" : "https://bg65j.atalaprism.io/prism-agent"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "did" : "did:prism:bd4287242092e1e6606beeddbb0a4f79f8467f33586e92644c09bbae534f248a",
+  "latestHash" : "bd4287242092e1e6606beeddbb0a4f79f8467f33586e92644c09bbae534f248a",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "027a2d2e653d7ee53596dc69e15ecb0e0c78f3980e5410f7f6bea80d4c4ac7c887"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "024686a3d1f5e776574530ca9853627aea49058df50d937d04bb700fd80a097fe9"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02fc47c6aee8bcf68e50cf411d1a7d42ece7c5963083aec3793ceb00ef61554da7"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://kyosodao.io/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "https://identus-cloud-agent-413893550661.asia-northeast1.run.app"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6523,
+    "o" : 0
+  }
+}

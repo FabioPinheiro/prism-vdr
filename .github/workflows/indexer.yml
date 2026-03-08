@@ -1,0 +1,117 @@
+name: PRISM Indexer
+run-name: PRISM Indexer
+
+on:
+  workflow_dispatch:
+  schedule:
+    #- cron: "*/10 * * * *" # Every 10 minutes for all networks
+    - cron: "0 */6 * * *" # Every 6 hour for all networks
+
+concurrency: # There can be at most one running and one pending job in a concurrency group at any time.
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  indexer-job:
+    name: Indexer job
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/cache@v4
+        with:
+          path: . # this will replace the folder '.git' and the AUTHORIZATION token (for job)
+          key: cache-git
+
+      - uses: actions/checkout@v4
+
+      - uses: coursier/cache-action@v6
+      - uses: coursier/setup-action@v1
+        #with:
+        #  extraJvmArgs: -D 
+
+      - name: Coursier Run Indexer for mainnet
+        run: |
+          if [[ '${{ secrets.BLOCKFROST_APIKEY_MAINNET }}' == '' ]]; then
+            echo The secret \"BLOCKFROST_APIKEY_MAINNET\" has not been setup. Skipping step
+            echo To setup go to \"settings \> secrets \> actions\" to create it.
+          else
+            cs launch app.fmgp::cardano-prism-cli:0.1.0-M40 -M fmgp.did.method.prism.cli.PrismCli -- indexer in-memory --token ${{ secrets.BLOCKFROST_APIKEY_MAINNET }}  ./mainnet
+          fi
+      - name: Coursier Run Indexer for preview
+        run: |
+          if [[ '${{ secrets.BLOCKFROST_APIKEY_PREVIEW }}' == '' ]]; then
+            echo The secret \"BLOCKFROST_APIKEY_PREVIEW\" has not been setup. Skipping step
+            echo To setup go to \"settings \> secrets \> actions\" to create it.
+          else
+            cs launch app.fmgp::cardano-prism-cli:0.1.0-M40 -M fmgp.did.method.prism.cli.PrismCli -- indexer in-memory --token ${{ secrets.BLOCKFROST_APIKEY_PREVIEW }}  ./preview
+          fi
+      - name: Coursier Run Indexer for mainnet
+        run: |
+          if [[ '${{ secrets.BLOCKFROST_APIKEY_PREPROD }}' == '' ]]; then
+            echo The secret \"BLOCKFROST_APIKEY_PREPROD\" has not been setup. Skipping step
+            echo To setup go to \"settings \> secrets \> actions\" to create it.
+          else
+            cs launch app.fmgp::cardano-prism-cli:0.1.0-M40 -M fmgp.did.method.prism.cli.PrismCli -- indexer in-memory --token ${{ secrets.BLOCKFROST_APIKEY_PREPROD }}  ./preprod
+          fi
+
+
+      # # Subtask for mainnet
+      # - name: Run Indexer for mainnet
+      #   uses: maus007/docker-run-action-fork@5ddaad0f7eedd03f64e412b1931852bd3031b273 #uses: addnab/docker-run-action@v3
+      #   with:
+      #     image: fmgp/prism-indexer:latest
+      #     options: -v ${{ github.workspace }}/mainnet:/data
+      #     run: |
+      #       if [[ '${{ secrets.BLOCKFROST_APIKEY_MAINNET }}' == '' ]]; then
+      #         echo The secret \"BLOCKFROST_APIKEY_MAINNET\" has not been setup. Skipping step
+      #         echo To setup go to \"settings \> secrets \> actions\" to create it.
+      #       else
+      #         java -XX:+UseContainerSupport -jar /cardano-prism.jar indexer --token ${{ secrets.BLOCKFROST_APIKEY_MAINNET }} ./data
+      #       fi
+
+      # # Subtask for preview
+      # - name: Run Indexer for preview
+      #   uses: maus007/docker-run-action-fork@5ddaad0f7eedd03f64e412b1931852bd3031b273 #uses: addnab/docker-run-action@v3
+      #   with:
+      #     image: fmgp/prism-indexer:latest
+      #     options: -v ${{ github.workspace }}/preview:/data
+      #     run: |
+      #       if [[ '${{ secrets.BLOCKFROST_APIKEY_PREVIEW }}' == '' ]]; then
+      #         echo The secret \"BLOCKFROST_APIKEY_PREVIEW\" has not been setup. Skipping step
+      #         echo To setup go to \"settings \> secrets \> actions\" to create it.
+      #       else
+      #         java -XX:+UseContainerSupport -jar /cardano-prism.jar indexer --token ${{ secrets.BLOCKFROST_APIKEY_PREVIEW }} ./data
+      #       fi
+
+      # # Subtask for preprod
+      # - name: Run Indexer for preprod
+      #   uses: maus007/docker-run-action-fork@5ddaad0f7eedd03f64e412b1931852bd3031b273 #uses: addnab/docker-run-action@v3
+      #   with:
+      #     image: fmgp/prism-indexer:latest
+      #     options: -v ${{ github.workspace }}/preprod:/data
+      #     run: |
+      #       if [[ '${{ secrets.BLOCKFROST_APIKEY_PREPROD }}' == '' ]]; then
+      #         echo The secret \"BLOCKFROST_APIKEY_PREPROD\" has not been setup. Skipping step
+      #         echo To setup go to \"settings \> secrets \> actions\" to create it.
+      #       else
+      #         java -XX:+UseContainerSupport -jar /cardano-prism.jar indexer --token ${{ secrets.BLOCKFROST_APIKEY_PREPROD }} ./data
+      #       fi
+
+      # - name: Cleanup docker-run-action artifacts
+      #   run: |
+      #     rm -f semicolon_delimited_script
+      #     git status
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        id: auto-commit-action
+        with:
+          commit_message: Indexer job (all networks)
+
+      - name: Check for changes detected
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        run: echo "Changes!"
+
+      - name: Check for no changes detected
+        if: steps.auto-commit-action.outputs.changes_detected == 'false'
+        run: echo "No Changes!"

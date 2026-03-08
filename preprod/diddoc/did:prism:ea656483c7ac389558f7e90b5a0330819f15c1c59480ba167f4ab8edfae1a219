@@ -1,0 +1,24 @@
+{
+  "id" : "did:prism:ea656483c7ac389558f7e90b5a0330819f15c1c59480ba167f4ab8edfae1a219",
+  "authentication" : [
+    {
+      "id" : "did:prism:ea656483c7ac389558f7e90b5a0330819f15c1c59480ba167f4ab8edfae1a219#key-1",
+      "controller" : "did:prism:ea656483c7ac389558f7e90b5a0330819f15c1c59480ba167f4ab8edfae1a219",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "fRcSXLmG7e1flUOtsxbxTl6rr0TV6SkcVPOyDz-dmEc",
+        "y" : "A6gHulS9d7Cd_Pu_hw2o1fX-t2mZohpPQl4jYBBn8Fw",
+        "kid" : "did:prism:ea656483c7ac389558f7e90b5a0330819f15c1c59480ba167f4ab8edfae1a219#key-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://bsandmann.github.io/OpenPrismNode/"
+    }
+  ]
+}

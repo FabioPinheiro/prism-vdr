@@ -1,0 +1,42 @@
+{
+  "did" : "did:prism:9a39683b55bbe0581d66f2ab11c93e7c960aa78e4827451f50f77c7ecb008769",
+  "latestHash" : "9a39683b55bbe0581d66f2ab11c93e7c960aa78e4827451f50f77c7ecb008769",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "e37a04135edf2b1621b49c3df519cba25bad12c8121885898e86454e9e4278b6"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "034462d0e8312df9086488b0b59bf4f8bdba52c486d30d7758608f94c70dfed17d"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://example.com/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "https://agent.socious.io/cloud-agent"
+    }
+  ],
+  "context" : [
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6477,
+    "o" : 0
+  }
+}

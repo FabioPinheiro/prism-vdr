@@ -1,0 +1,55 @@
+{
+  "id" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0",
+  "authentication" : [
+    {
+      "id" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0#key1",
+      "controller" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "Is32AaCeYJtYCbDRiXcuodMsNwktmOsjxGy-BtT6NPs",
+        "y" : "wRmWJx19JHdSajMjka-jHTQtO-sVcniohU1aF1FgsOU",
+        "kid" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0#key1"
+      }
+    },
+    {
+      "id" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0#key3",
+      "controller" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "zC413pJ7E1ca-NePS7UmvgdfnI_sixLUU1cTmV9xxIE",
+        "y" : "Z9wcC9mLgQxLCiOpQWJv1FePSZLgR1Imb6lR533cM7E",
+        "kid" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0#key3"
+      }
+    }
+  ],
+  "keyAgreement" : [
+    {
+      "id" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0#key2",
+      "controller" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "btJIJOKK08YmlFhGFU1LcK0RH2_l3JYamwQJwNxKoSk",
+        "y" : "A-c11_Dl6OH-zVwOmf8_yD_K9J8zCKhs8Gh7_1gvo6Y",
+        "kid" : "did:prism:d631f2aa78aa84812836c44ae241c685895b5fc19cc7e61598ff7b2768402ee0#key2"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "did:prism:test1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://test1.com"
+    },
+    {
+      "id" : "did:prism:test2",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://test2.com"
+    }
+  ]
+}

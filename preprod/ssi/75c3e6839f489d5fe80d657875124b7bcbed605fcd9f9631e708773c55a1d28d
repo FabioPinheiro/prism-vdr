@@ -1,0 +1,43 @@
+{
+  "did" : "did:prism:75c3e6839f489d5fe80d657875124b7bcbed605fcd9f9631e708773c55a1d28d",
+  "latestHash" : "75c3e6839f489d5fe80d657875124b7bcbed605fcd9f9631e708773c55a1d28d",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "d53d943364f40735333a00155b232439f280b23a583c5cbaf00747a7e7d4446f"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "assertion-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "cbb4ee4213d1d9612b1afe1a9979ce70f53b953ecb442f4b9ef4287e1cf9c0a5"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0206ff9dcd58ebf1d94f9dc19b64687d6928387f9f2f8bb695a5f0850707a5b04c"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "{\"url\":\"https://example.com\",\"filename\":\"my-did-document.json\",\"year\":2025}"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17254,
+    "o" : 0
+  }
+}

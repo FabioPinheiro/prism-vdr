@@ -1,0 +1,28 @@
+{
+  "id" : "did:prism:add826cfaf60f264e12665053ece2ce0e2591c5e7e72031e42ca57711f597233",
+  "authentication" : [
+    {
+      "id" : "did:prism:add826cfaf60f264e12665053ece2ce0e2591c5e7e72031e42ca57711f597233#key-1",
+      "controller" : "did:prism:add826cfaf60f264e12665053ece2ce0e2591c5e7e72031e42ca57711f597233",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "YlGeiRRbOkoc9YVHmZoro1vzmYFxU6e0vFeh7DV5JBU",
+        "kid" : "did:prism:add826cfaf60f264e12665053ece2ce0e2591c5e7e72031e42ca57711f597233#key-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://example.com/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "http://cloud-agent:8085"
+    }
+  ]
+}

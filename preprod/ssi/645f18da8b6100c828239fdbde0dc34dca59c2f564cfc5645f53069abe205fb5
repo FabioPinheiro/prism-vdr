@@ -1,0 +1,45 @@
+{
+  "did" : "did:prism:645f18da8b6100c828239fdbde0dc34dca59c2f564cfc5645f53069abe205fb5",
+  "latestHash" : "6ee575114d71c3ccdffb2cd5e7ed6c14c24d9f5fad6414e76b9b98a0c3e8daa0",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "ccda15d56e0310228ae61865551b050fe4765c5338c716bdbcc7115e46bf5bed"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "026ffa2fd3c7d9f52f6fbe759094855903379fb735194bc081b9d68f2d277d2e60"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-3",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "029cc827c4f43bfd3ca6e3cb6c86060dbd887623aef97fd55d2e776b7f2b0f8d59"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://blocktrust.dev/"
+    }
+  ],
+  "context" : [
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6577,
+    "o" : 0
+  }
+}

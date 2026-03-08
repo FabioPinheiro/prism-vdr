@@ -1,0 +1,43 @@
+{
+  "did" : "did:prism:d149d3e61272b6e8515f35af46cdf35b9013d28ad9e9c4f2656b2e131c13b7a2",
+  "latestHash" : "d149d3e61272b6e8515f35af46cdf35b9013d28ad9e9c4f2656b2e131c13b7a2",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "auth-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0388abf46fb02e35a9f6805266a188519ecfcd08bf8e0c4c8580cfc3410ef9f556"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "issue-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03bfd774122166b3cb868b73e87d0d46912913a2bf4c28e06d6ec45af357569908"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0210b9dd77eca5ac2a09329533f2c286313bf2455d1543b3ccda1214b9af827fba"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "did:prism:test1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://wallet.socious.io/"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6397,
+    "o" : 0
+  }
+}

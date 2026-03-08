@@ -1,0 +1,37 @@
+{
+  "did" : "did:prism:aed5c6eb1cddfdfc71c8def60ab19fd6d35ac1e1df038ae35248ff5f8ab1e93c",
+  "latestHash" : "aed5c6eb1cddfdfc71c8def60ab19fd6d35ac1e1df038ae35248ff5f8ab1e93c",
+  "keys" : [
+    {
+      "UncompressedECKey" : {
+        "id" : "key1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "5851b57869ca43d4244388e760ead5bb4c9cf5ecdaac84efc20e30e6e38800c3",
+        "y" : "45bb8e8cec9bb48750f1721885f55cd1bcc284222a8d8600f6624a34ab40c20e"
+      }
+    },
+    {
+      "UncompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "af1b8a7f0b8dc4b5b4a5733939f2a5f157d6b463cf82d5372cf3158e393c6837",
+        "y" : "910dd36de6086410a1118f5c746c93b81216771c5eda420c11941132fdfe99f4"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "https://bg65j.atalaprism.io/prism-agent",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://bg65j.atalaprism.io/prism-agent"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 4087,
+    "o" : 2
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "did" : "did:prism:fa0b4fd020253c5eda719cb668a53f3c70b8b1d3ef56c38dce6cabaac0208eff",
+  "latestHash" : "53463325e755849b287a4954e79fd01113a490a36c01dc05f79a03c1ddc8b606",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-0-Master-0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "023f7c75c9e5fba08fea1640d6faa3f8dc0151261d2b56026d46ddcbe1fc5a5bbb"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "endpoint2",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "{\"uri\":\"wss://localhost:8080/ws\"}"
+    },
+    {
+      "id" : "endpoint1",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "{\"uri\":\"https://localhost:8080\"}"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17402,
+    "o" : 1
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "did" : "did:prism:31b4809fef307c4711b67eb93ed7a1d28c569d67d0315ff79a32b78a80ab14ac",
+  "latestHash" : "31b4809fef307c4711b67eb93ed7a1d28c569d67d0315ff79a32b78a80ab14ac",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0272ec2fe3ff91c761299a0cf2ac2ced4853b502ea3b6205e8054e2f835508a09d"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "033b3ca62dfad33555dee2271bcd0e82a14951b91e19d5dc04da9adf00bc76cf07"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "020d4b3a312f3aa27c68dff71e8f61b56e1e62730662c89263021c594b9e1c42f1"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "[\"https://csign.io/agreement/5/0xb0e5a33c750a55a5add556528e4195a9403af3c412f06e017e251026f54caa22\"]"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6590,
+    "o" : 0
+  }
+}

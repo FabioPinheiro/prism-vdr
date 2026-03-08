@@ -1,0 +1,40 @@
+{
+  "did" : "did:prism:ea656483c7ac389558f7e90b5a0330819f15c1c59480ba167f4ab8edfae1a219",
+  "latestHash" : "ea656483c7ac389558f7e90b5a0330819f15c1c59480ba167f4ab8edfae1a219",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0393efdf2b4c08fcb1437aa272d6b11d37cdaca59623ca40499fdf6c4f2fc0f6a1"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "027d17125cb986eded5f9543adb316f14e5eabaf44d5e9291c54f3b20f3f9d9847"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://bsandmann.github.io/OpenPrismNode/"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1",
+    "https://identity.foundation/.well-known/did-configuration/v1",
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17105,
+    "o" : 0
+  }
+}

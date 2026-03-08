@@ -1,0 +1,69 @@
+{
+  "did" : "did:prism:fdc1a387d5cf38798bb6dae84458245773f488913779b8fdf097e965769461b7",
+  "latestHash" : "8828779e6f54e8d3bb0eeae8deaf5bfdb150cb0155f22733692585c4de158813",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0259ab6ab91f56e6b9cd469ea9f6d24e50ba7f6ca4296b75c9327d5c0950112d84"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "95aa1929414defc339ebb9dcc39860af73e758fc9141888cc7350534c285a714"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-3",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "ae5e491932fef28656e23b7cc6facaeb41f1b1e61d69a462755230dbc21f6450"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-u1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03e01336b0abdc386ac51d2da267257d556df90ba7b3bcb5113fdccf2f18e7b246"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-u2",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "72347540b0f7dded87ff8bd10c38d1321c88e3bbe336cba7348a85fb5f6277fc"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    },
+    {
+      "id" : "service-2",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1",
+    "https://identity.foundation/.well-known/did-configuration/v1",
+    "https://didcomm.org/messaging/contexts/v3"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 16988,
+    "o" : 0
+  }
+}

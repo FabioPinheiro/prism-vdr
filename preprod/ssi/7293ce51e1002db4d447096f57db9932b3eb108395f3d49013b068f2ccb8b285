@@ -1,0 +1,53 @@
+{
+  "did" : "did:prism:7293ce51e1002db4d447096f57db9932b3eb108395f3d49013b068f2ccb8b285",
+  "latestHash" : "b11481a142de16e13bd8100ce737a3204972e8ed6045ce3ef4cd69fcc119436a",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "assertion-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03a1469cb40852463e20efa19beecc32618f90335b66d605958c2d22f667ba7809"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02d56ffca46b35bf014409900b9a1123dd2ed3693edc86c6a46f1c1c9ce92d8e84"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "auth-2",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "037434633fb1d343c4466d87153fc1c7db84ace35a1e02a559572a5b9dd8b05207"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "https://foo.bar.com",
+      "type" : "[\"LinkedDomains\"]",
+      "serviceEndpoint" : "{\"value\":\"https://foo.bar.com/\"}"
+    },
+    {
+      "id" : "https://update.com",
+      "type" : "[\"LinkedDomains\"]",
+      "serviceEndpoint" : "{\"value\":\"https://bar.foo.com/\"}"
+    },
+    {
+      "id" : "https://remove.com",
+      "type" : "[\"LinkedDomains\"]",
+      "serviceEndpoint" : "{\"value\":\"https://remove.com/\"}"
+    }
+  ],
+  "context" : [],
+  "disabled" : true,
+  "cursor" : {
+    "b" : 6123,
+    "o" : 0
+  }
+}

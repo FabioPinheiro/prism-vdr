@@ -1,0 +1,53 @@
+{
+  "id" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827",
+  "authentication" : [
+    {
+      "id" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827#key-1",
+      "controller" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "sO9NHReUZcmizqkrDnnP1ab3hM_M0ehuXUKPPmdzQjw",
+        "y" : "60KSZCd8MY6Lz93nKbMoulSdGJOnLMVKWEuscIItwok",
+        "kid" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827#key-1"
+      }
+    },
+    {
+      "id" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827#key-2",
+      "controller" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "3KlCEKov8KiUURlLYLfFH_J33hVzLJ9UzcVySn9KCtM",
+        "kid" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827#key-2"
+      }
+    }
+  ],
+  "keyAgreement" : [
+    {
+      "id" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827#key-3",
+      "controller" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "X25519",
+        "x" : "nzWBNAhWKfPzzhNu0D1FpNoB0LF7rRQF5f3qbOGoAlQ",
+        "kid" : "did:prism:cfd6777ae7580acb6004a106924f4a698fb3c4218a87b2ace7fa40d00df0a827#key-3"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    },
+    {
+      "id" : "service-2",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    }
+  ]
+}

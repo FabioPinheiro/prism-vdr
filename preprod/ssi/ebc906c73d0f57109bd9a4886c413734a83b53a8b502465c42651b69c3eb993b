@@ -1,0 +1,38 @@
+{
+  "did" : "did:prism:ebc906c73d0f57109bd9a4886c413734a83b53a8b502465c42651b69c3eb993b",
+  "latestHash" : "ebc906c73d0f57109bd9a4886c413734a83b53a8b502465c42651b69c3eb993b",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03db4f54906e614812db35264014f026fa23d74726731d99f19d96d2144a3bd084"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03433a320ec4ffa2e6941ea16202c6da1437d48987506312c8bf9d108bf73789cd"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomain",
+      "serviceEndpoint" : "https://docs.workflow.blocktrust.dev"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17109,
+    "o" : 0
+  }
+}

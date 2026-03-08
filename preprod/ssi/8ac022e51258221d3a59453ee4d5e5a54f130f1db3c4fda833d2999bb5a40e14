@@ -1,0 +1,46 @@
+{
+  "did" : "did:prism:8ac022e51258221d3a59453ee4d5e5a54f130f1db3c4fda833d2999bb5a40e14",
+  "latestHash" : "a9c3b929a708a2bd2caa89f20df105dbac87c31513d4a06cedf1b8649ad5933d",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0340da1afd139a1729726ad2799088909526989a705be5e00fac79e1b2a7ab56bf"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "74d763ee1651ef642590bb20e8df33bea3e67943eaf1e7b0d0d58771494fae76"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "a06cf4756811b425d0e7a9abae7e39d0917cc34dd1238c4a5885baeb1e67520b"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomain",
+      "serviceEndpoint" : "https://myown.website.com"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "disabled" : true,
+  "cursor" : {
+    "b" : 17072,
+    "o" : 0
+  }
+}

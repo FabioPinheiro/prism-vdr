@@ -1,0 +1,23 @@
+{
+  "id" : "did:prism:7126eb2edd411fc4771ab6130e733f64c7cb0ea6e25866f8a81381c0e7e82d1a",
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:7126eb2edd411fc4771ab6130e733f64c7cb0ea6e25866f8a81381c0e7e82d1a#key-1",
+      "controller" : "did:prism:7126eb2edd411fc4771ab6130e733f64c7cb0ea6e25866f8a81381c0e7e82d1a",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "kti1qQ9AlnVNobeEZAWiEUXjbPgIIQHQPbEX26VAF-A",
+        "kid" : "did:prism:7126eb2edd411fc4771ab6130e733f64c7cb0ea6e25866f8a81381c0e7e82d1a#key-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomain",
+      "serviceEndpoint" : "https://dummy.domain.com"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id" : "did:prism:9f22aa916165008337e8944e921222e92d392dccd087468ba69b4e48d293d873",
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:9f22aa916165008337e8944e921222e92d392dccd087468ba69b4e48d293d873#key-1",
+      "controller" : "did:prism:9f22aa916165008337e8944e921222e92d392dccd087468ba69b4e48d293d873",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "Q9JxBS6-YX5O9zx0wTcKfDVcpsBXUcNhjAPDAR_W7sY",
+        "y" : "HYw4VfI0_7jWHhtrDCHvE7I1DRF-mOhvTZrn836AXOc",
+        "kid" : "did:prism:9f22aa916165008337e8944e921222e92d392dccd087468ba69b4e48d293d873#key-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomain",
+      "serviceEndpoint" : "http://some.domain"
+    }
+  ]
+}

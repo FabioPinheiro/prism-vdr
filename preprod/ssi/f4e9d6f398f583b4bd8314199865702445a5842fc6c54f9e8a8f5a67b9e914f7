@@ -1,0 +1,45 @@
+{
+  "did" : "did:prism:f4e9d6f398f583b4bd8314199865702445a5842fc6c54f9e8a8f5a67b9e914f7",
+  "latestHash" : "c1c725696f72aad59951536d1694aad75fe8489ce93bbf790bfacda9c2cff5a8",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "023b36f07fa5df51df1f3b349eeace7d897232c33eb079899ae05de6a36ab2a8a2"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-3",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "cd96d872e241bb3fbc7103accbe44eae9bae2ccc45a538bc38549374f0d2c261"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    },
+    {
+      "id" : "service-2",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1",
+    "https://identity.foundation/.well-known/did-configuration/v1",
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 16982,
+    "o" : 0
+  }
+}

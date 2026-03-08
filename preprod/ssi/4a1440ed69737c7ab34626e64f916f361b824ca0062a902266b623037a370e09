@@ -1,0 +1,45 @@
+{
+  "did" : "did:prism:4a1440ed69737c7ab34626e64f916f361b824ca0062a902266b623037a370e09",
+  "latestHash" : "4a1440ed69737c7ab34626e64f916f361b824ca0062a902266b623037a370e09",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "7bfbb0da-609d-4598-9414-c88af8a99051",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0218a7d9a6adf8f9588f31794d10202ee07fb01dee34139eae0bd9ec2a1b0e77ce"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "f203820b-8c49-481c-aaca-ba2e8be0fcab",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03bf18f4d959ab5956da30fce17b7fc2c3f787e7d733d749e301052ef8f1eb0092"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02fd573625067506ef380edc04197ae4dfd3d46fc0c6e7daf214a7bf15f9a11bfa"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://apidev.reitcircles.com/"
+    }
+  ],
+  "context" : [
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 16916,
+    "o" : 0
+  }
+}

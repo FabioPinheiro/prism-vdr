@@ -1,0 +1,23 @@
+{
+  "id" : "did:prism:c1495c0674465d3ae24258320960076723823ee6f19cc85db567fb8389300e3e",
+  "authentication" : [
+    {
+      "id" : "did:prism:c1495c0674465d3ae24258320960076723823ee6f19cc85db567fb8389300e3e#key-1",
+      "controller" : "did:prism:c1495c0674465d3ae24258320960076723823ee6f19cc85db567fb8389300e3e",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "Qcuh45qJyaAOce2njMOtA1XcCR7SyXW6yQjlHonD7_k",
+        "kid" : "did:prism:c1495c0674465d3ae24258320960076723823ee6f19cc85db567fb8389300e3e#key-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomain",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/awesome"
+    }
+  ]
+}

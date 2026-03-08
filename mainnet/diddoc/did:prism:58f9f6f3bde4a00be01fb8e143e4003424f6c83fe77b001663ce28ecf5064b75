@@ -1,0 +1,38 @@
+{
+  "id" : "did:prism:58f9f6f3bde4a00be01fb8e143e4003424f6c83fe77b001663ce28ecf5064b75",
+  "authentication" : [
+    {
+      "id" : "did:prism:58f9f6f3bde4a00be01fb8e143e4003424f6c83fe77b001663ce28ecf5064b75#auth-1",
+      "controller" : "did:prism:58f9f6f3bde4a00be01fb8e143e4003424f6c83fe77b001663ce28ecf5064b75",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "El2s3JK8laj02QWQ6twp1ZCGrOgmXjUOIVXuDb-2804",
+        "y" : "bzDBVbPQTjrBq6wLmajRJzxtLU_8YAftka-gtJb5i6k",
+        "kid" : "did:prism:58f9f6f3bde4a00be01fb8e143e4003424f6c83fe77b001663ce28ecf5064b75#auth-1"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:58f9f6f3bde4a00be01fb8e143e4003424f6c83fe77b001663ce28ecf5064b75#issue-1",
+      "controller" : "did:prism:58f9f6f3bde4a00be01fb8e143e4003424f6c83fe77b001663ce28ecf5064b75",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "zOFg4IZUI4lHYiMQgEsVCT1PYyZb3izilsrKJ0UnNZk",
+        "y" : "EAP-3DduJGxfsVp5wN9JNWtsbwY7wULVpjIaEeVLUcE",
+        "kid" : "did:prism:58f9f6f3bde4a00be01fb8e143e4003424f6c83fe77b001663ce28ecf5064b75#issue-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "https://agent.socious.io/cloud-agent"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "id" : "did:prism:ebc906c73d0f57109bd9a4886c413734a83b53a8b502465c42651b69c3eb993b",
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:ebc906c73d0f57109bd9a4886c413734a83b53a8b502465c42651b69c3eb993b#key-1",
+      "controller" : "did:prism:ebc906c73d0f57109bd9a4886c413734a83b53a8b502465c42651b69c3eb993b",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "QzoyDsT_ouaUHqFiAsbaFDfUiYdQYxLIv50Qi_c3ic0",
+        "y" : "H4BwBobFzolrjN_ozmy3m-OJOJrqXwa2oXhLIsRwzq8",
+        "kid" : "did:prism:ebc906c73d0f57109bd9a4886c413734a83b53a8b502465c42651b69c3eb993b#key-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomain",
+      "serviceEndpoint" : "https://docs.workflow.blocktrust.dev"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id" : "did:prism:4a1440ed69737c7ab34626e64f916f361b824ca0062a902266b623037a370e09",
+  "authentication" : [
+    {
+      "id" : "did:prism:4a1440ed69737c7ab34626e64f916f361b824ca0062a902266b623037a370e09#f203820b-8c49-481c-aaca-ba2e8be0fcab",
+      "controller" : "did:prism:4a1440ed69737c7ab34626e64f916f361b824ca0062a902266b623037a370e09",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "vxj02VmrWVbaMPzhe3_Cw_eH59cz10njAQUu-PHrAJI",
+        "y" : "1_2FXPEdKqWev7G4yN_qjtz2pRSUe82KM8ZpGMKZz50",
+        "kid" : "did:prism:4a1440ed69737c7ab34626e64f916f361b824ca0062a902266b623037a370e09#f203820b-8c49-481c-aaca-ba2e8be0fcab"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:4a1440ed69737c7ab34626e64f916f361b824ca0062a902266b623037a370e09#7bfbb0da-609d-4598-9414-c88af8a99051",
+      "controller" : "did:prism:4a1440ed69737c7ab34626e64f916f361b824ca0062a902266b623037a370e09",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "GKfZpq34-ViPMXlNECAu4H-wHe40E56uC9nsKhsOd84",
+        "y" : "IWEPy-tkygezU6P-CQ2d38dRaqZFchARPiYBcVMzhbY",
+        "kid" : "did:prism:4a1440ed69737c7ab34626e64f916f361b824ca0062a902266b623037a370e09#7bfbb0da-609d-4598-9414-c88af8a99051"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://apidev.reitcircles.com/"
+    }
+  ]
+}

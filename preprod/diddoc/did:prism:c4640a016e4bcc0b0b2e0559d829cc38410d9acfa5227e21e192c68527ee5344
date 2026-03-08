@@ -1,0 +1,38 @@
+{
+  "id" : "did:prism:c4640a016e4bcc0b0b2e0559d829cc38410d9acfa5227e21e192c68527ee5344",
+  "authentication" : [
+    {
+      "id" : "did:prism:c4640a016e4bcc0b0b2e0559d829cc38410d9acfa5227e21e192c68527ee5344#key1",
+      "controller" : "did:prism:c4640a016e4bcc0b0b2e0559d829cc38410d9acfa5227e21e192c68527ee5344",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "qNYDoWJh7JWrz9vTfph4VEScOkwhMHWC1Bf1dj7jid0",
+        "y" : "nAGLyb1hbVxDwQRDeaznWJmon34syu9GNitQVB3CjhY",
+        "kid" : "did:prism:c4640a016e4bcc0b0b2e0559d829cc38410d9acfa5227e21e192c68527ee5344#key1"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:c4640a016e4bcc0b0b2e0559d829cc38410d9acfa5227e21e192c68527ee5344#key2",
+      "controller" : "did:prism:c4640a016e4bcc0b0b2e0559d829cc38410d9acfa5227e21e192c68527ee5344",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "4qZmoX43DSAsELM0iCjImbtgRq1iP33QDlE88cEJJrA",
+        "y" : "onIdvYU0ZU2UT48j3cXI2Hde8oh_64ORyv7mlyyO89U",
+        "kid" : "did:prism:c4640a016e4bcc0b0b2e0559d829cc38410d9acfa5227e21e192c68527ee5344#key2"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "did:prism:test1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://test1.com/"
+    }
+  ]
+}

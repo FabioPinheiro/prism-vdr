@@ -1,0 +1,43 @@
+{
+  "did" : "did:prism:0cdc9b6af4a0d653d3cc4f42f98bf4625223969b745239265a27febbf72cb61f",
+  "latestHash" : "0cdc9b6af4a0d653d3cc4f42f98bf4625223969b745239265a27febbf72cb61f",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "auth-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "032e50853b7ce17b7c0955efa4cb3af57c52aff0b7ebc21ee820204d4243a4f15a"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "issue-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "025474f5d64994eb819c3bfeaeb1ebf8191607a4a6ccc2d36dda00a079134fa75e"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02480ff2d76b2c03abafbc4708ed4cac8b9212c34e4ba02af4a029d22601729720"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "https://agent.socious.io/cloud-agent"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6593,
+    "o" : 0
+  }
+}

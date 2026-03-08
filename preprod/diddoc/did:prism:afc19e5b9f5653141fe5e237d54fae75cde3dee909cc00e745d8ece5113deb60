@@ -1,0 +1,24 @@
+{
+  "id" : "did:prism:afc19e5b9f5653141fe5e237d54fae75cde3dee909cc00e745d8ece5113deb60",
+  "authentication" : [
+    {
+      "id" : "did:prism:afc19e5b9f5653141fe5e237d54fae75cde3dee909cc00e745d8ece5113deb60#key1",
+      "controller" : "did:prism:afc19e5b9f5653141fe5e237d54fae75cde3dee909cc00e745d8ece5113deb60",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "QBINJsvXTY0cQyV2peCYrbtyg9qbX453NbbC4LScjKA",
+        "y" : "lqBaEHtA2pnzE_Z7kol8H0BH0VWc7vXBvvrMYT_ynS4",
+        "kid" : "did:prism:afc19e5b9f5653141fe5e237d54fae75cde3dee909cc00e745d8ece5113deb60#key1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "https://foo.bar.com",
+      "type" : "MediatorService",
+      "serviceEndpoint" : "https://foo.bar.com"
+    }
+  ]
+}

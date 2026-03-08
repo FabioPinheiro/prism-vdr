@@ -1,0 +1,48 @@
+{
+  "did" : "did:prism:3bb7ac1e6f574387878609de7460aa6752f48e8a45153ea6ea10449c8c03aeee",
+  "latestHash" : "3bb7ac1e6f574387878609de7460aa6752f48e8a45153ea6ea10449c8c03aeee",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "a6575f3215efbb1066f3d708abc276a66b126cfb606a6271b1e8e7a5235370dc"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "1f2ebc8c8dd55cec73045326abfb8803b0cfcf37037235ae63ad9a256b4f5d7d"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02a97d49ac8c84d4c9ba98328c0513e5c05b50aec656e33563d2295c709a863c82"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://kyosodao.io/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "http://35.200.2.129:8085"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6547,
+    "o" : 8
+  }
+}

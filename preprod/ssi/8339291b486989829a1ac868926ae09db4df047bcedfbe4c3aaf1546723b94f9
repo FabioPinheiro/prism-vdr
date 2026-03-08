@@ -1,0 +1,85 @@
+{
+  "did" : "did:prism:8339291b486989829a1ac868926ae09db4df047bcedfbe4c3aaf1546723b94f9",
+  "latestHash" : "3a8720c6ad2e475a40813ea57ddb6ea9f82a0950764147db014442c3b10a02f6",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "025fa2bedc3f5ff65ae160362dd62847b9ec9931e972ca015bd79937921df5cc65"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02864f750fa7b9f89385c82e1b25dbf1440a3e939e07cbcec8a4afdffd565ff4e8"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "455a76a3f197f6ee231680db08fdb17e3fca17f0eea93f6f5f889242b49f0a79"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-3",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "e68b529de6933a3b15c9903218e603051bd20d76b44c495a12aaa9f5db3c7319"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1a",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03dc82cab7b9409d18156e772fb73c25fe6ff9a4026cb49e5ed0b65b40dd3d3edd"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2a",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "53fbc1eaa50471117238379f9e6e6b2bcbdeef93e032582f957f5766afea0048"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-3a",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "70e61711df6a17d166b7e826ddc8d53fd2de1a5d90376adc0c97ed68b073da20"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    },
+    {
+      "id" : "service-2",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1",
+    "https://identity.foundation/.well-known/did-configuration/v1",
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17038,
+    "o" : 0
+  }
+}

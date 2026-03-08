@@ -1,0 +1,41 @@
+{
+  "id" : "did:prism:6574b4b122ba2a092b2cc6fa1984edce0ce4bb35f466b12569c480a84085a256",
+  "authentication" : [
+    {
+      "id" : "did:prism:6574b4b122ba2a092b2cc6fa1984edce0ce4bb35f466b12569c480a84085a256#key-1",
+      "controller" : "did:prism:6574b4b122ba2a092b2cc6fa1984edce0ce4bb35f466b12569c480a84085a256",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "d-nSbcSxpp1b8amIDImFIgZktbnhZ9Eic_RdpciFgcc",
+        "kid" : "did:prism:6574b4b122ba2a092b2cc6fa1984edce0ce4bb35f466b12569c480a84085a256#key-1"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:6574b4b122ba2a092b2cc6fa1984edce0ce4bb35f466b12569c480a84085a256#key-2",
+      "controller" : "did:prism:6574b4b122ba2a092b2cc6fa1984edce0ce4bb35f466b12569c480a84085a256",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "kpsW3qIuPPDwzlrZnBEI0SKTQ9aOSfQUm3hiYo_mA6Q",
+        "kid" : "did:prism:6574b4b122ba2a092b2cc6fa1984edce0ce4bb35f466b12569c480a84085a256#key-2"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://kyosodao.io/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "http://35.200.2.129:8085"
+    }
+  ]
+}

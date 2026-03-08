@@ -1,0 +1,38 @@
+{
+  "id" : "did:prism:cbd7f11b91659947bfdc2f5bc91ba9ebb81bd368af4327bd3ff5c2420aaf02c9",
+  "authentication" : [
+    {
+      "id" : "did:prism:cbd7f11b91659947bfdc2f5bc91ba9ebb81bd368af4327bd3ff5c2420aaf02c9#auth-1",
+      "controller" : "did:prism:cbd7f11b91659947bfdc2f5bc91ba9ebb81bd368af4327bd3ff5c2420aaf02c9",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "j810Sk2L_qX7NvzJ_rb18rbsTUdAdDCUN_dgFPbtg8E",
+        "y" : "IDYUr1fTRbQCDUe8CoIzIXreadvsDr7u2vtvVuLhgKM",
+        "kid" : "did:prism:cbd7f11b91659947bfdc2f5bc91ba9ebb81bd368af4327bd3ff5c2420aaf02c9#auth-1"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:cbd7f11b91659947bfdc2f5bc91ba9ebb81bd368af4327bd3ff5c2420aaf02c9#issue-1",
+      "controller" : "did:prism:cbd7f11b91659947bfdc2f5bc91ba9ebb81bd368af4327bd3ff5c2420aaf02c9",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "20dhjFx4f3LZyFWr6fZzb_lhlc7bbJJm6Ok-uw3BjPs",
+        "y" : "TS7DvAQP0OBQmIN0MNPQX3SShk03Cfz3oMOT6gzRMpw",
+        "kid" : "did:prism:cbd7f11b91659947bfdc2f5bc91ba9ebb81bd368af4327bd3ff5c2420aaf02c9#issue-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "did:prism:test1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://wallet.socious.io/"
+    }
+  ]
+}

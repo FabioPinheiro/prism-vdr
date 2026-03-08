@@ -1,0 +1,64 @@
+{
+  "id" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5",
+  "authentication" : [
+    {
+      "id" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5#key-2",
+      "controller" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "amEpljQtOYjTYoov5nOP_uTJR24qIrqa2-tOm_ZqFuE",
+        "kid" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5#key-2"
+      }
+    },
+    {
+      "id" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5#key-u1",
+      "controller" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "7r77lNxM46gH5_9vK3eMzvsBh2uqjqPbykl7ZLF4k0I",
+        "y" : "d2tOkjessTnh9Gc-GyQERTSozstHl8uXHdNkE_eqrYA",
+        "kid" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5#key-u1"
+      }
+    },
+    {
+      "id" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5#key-u2",
+      "controller" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "Tv_mjtlLG5y2QytKUpvpMbyhvp27yogtvaDjAmXpI-Y",
+        "kid" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5#key-u2"
+      }
+    }
+  ],
+  "keyAgreement" : [
+    {
+      "id" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5#key-3",
+      "controller" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "X25519",
+        "x" : "hicmGuowFn0_cpFvM831A-hQ6F4JLu9ZLc0Dv_lMNn0",
+        "kid" : "did:prism:c87006a0e00fcba923a48d5c9df0212a775e1ec24c9fd01a3fe6fda7e97f7ac5#key-3"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    },
+    {
+      "id" : "service-2",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    }
+  ]
+}

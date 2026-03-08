@@ -1,0 +1,38 @@
+{
+  "id" : "did:prism:412f0ccce8e47326f0254d258c2ce3054c82d688bfe0732692ce2988020747ca",
+  "authentication" : [
+    {
+      "id" : "did:prism:412f0ccce8e47326f0254d258c2ce3054c82d688bfe0732692ce2988020747ca#auth-1",
+      "controller" : "did:prism:412f0ccce8e47326f0254d258c2ce3054c82d688bfe0732692ce2988020747ca",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "MJiaxMe-vx4swnJ0gbmfLbCfEWUIyomTWcaUCBQTzpU",
+        "y" : "XhMHJkfDPP9ToEEUcvBVkV_LNKoOskq9KA9WgU_F64c",
+        "kid" : "did:prism:412f0ccce8e47326f0254d258c2ce3054c82d688bfe0732692ce2988020747ca#auth-1"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:412f0ccce8e47326f0254d258c2ce3054c82d688bfe0732692ce2988020747ca#issue-1",
+      "controller" : "did:prism:412f0ccce8e47326f0254d258c2ce3054c82d688bfe0732692ce2988020747ca",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "NnwPBYSbHIC9DuAqs2yPbFRGsNFkBfHkPvsFaoIlhVM",
+        "y" : "XDRg_XECdWp0KsGlFOxbIPDI9j2Qq6F97yANqiPmRu8",
+        "kid" : "did:prism:412f0ccce8e47326f0254d258c2ce3054c82d688bfe0732692ce2988020747ca#issue-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "https://agent.socious.io/cloud-agent"
+    }
+  ]
+}

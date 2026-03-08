@@ -1,0 +1,43 @@
+{
+  "id" : "did:prism:4afd58dc31a9745de2847fae032b17c6880b6d75f8ed4781445a1cf7bfda6283",
+  "authentication" : [
+    {
+      "id" : "did:prism:4afd58dc31a9745de2847fae032b17c6880b6d75f8ed4781445a1cf7bfda6283#key-1",
+      "controller" : "did:prism:4afd58dc31a9745de2847fae032b17c6880b6d75f8ed4781445a1cf7bfda6283",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "E9b0NB-BTMMRhPcz08R5WK29p5c0vbTVUqXxlJU_ZKk",
+        "y" : "w-52yqrjP6OWu3S6qjnvsuXb63w1YmjeT-62wdi45y0",
+        "kid" : "did:prism:4afd58dc31a9745de2847fae032b17c6880b6d75f8ed4781445a1cf7bfda6283#key-1"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:4afd58dc31a9745de2847fae032b17c6880b6d75f8ed4781445a1cf7bfda6283#key-2",
+      "controller" : "did:prism:4afd58dc31a9745de2847fae032b17c6880b6d75f8ed4781445a1cf7bfda6283",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "NPzREBVWO5YSXAEJSsjPz01sDUI8f3XtTBf-oClMy38",
+        "y" : "lotN5MAIJRRVqsqE7GB4vJpA4qVasY8mwn3px3XFvrA",
+        "kid" : "did:prism:4afd58dc31a9745de2847fae032b17c6880b6d75f8ed4781445a1cf7bfda6283#key-2"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://kyosodao.io/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "https://identus-cloud-agent-413893550661.asia-northeast1.run.app"
+    }
+  ]
+}

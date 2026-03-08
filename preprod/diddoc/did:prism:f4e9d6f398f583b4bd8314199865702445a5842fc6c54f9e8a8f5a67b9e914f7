@@ -1,0 +1,28 @@
+{
+  "id" : "did:prism:f4e9d6f398f583b4bd8314199865702445a5842fc6c54f9e8a8f5a67b9e914f7",
+  "keyAgreement" : [
+    {
+      "id" : "did:prism:f4e9d6f398f583b4bd8314199865702445a5842fc6c54f9e8a8f5a67b9e914f7#key-3",
+      "controller" : "did:prism:f4e9d6f398f583b4bd8314199865702445a5842fc6c54f9e8a8f5a67b9e914f7",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "X25519",
+        "x" : "zZbYcuJBuz-8cQOsy-ROrpuuLMxFpTi8OFSTdPDSwmE",
+        "kid" : "did:prism:f4e9d6f398f583b4bd8314199865702445a5842fc6c54f9e8a8f5a67b9e914f7#key-3"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    },
+    {
+      "id" : "service-2",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    }
+  ]
+}

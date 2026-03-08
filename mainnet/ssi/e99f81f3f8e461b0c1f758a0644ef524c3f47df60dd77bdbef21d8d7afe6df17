@@ -1,0 +1,37 @@
+{
+  "did" : "did:prism:e99f81f3f8e461b0c1f758a0644ef524c3f47df60dd77bdbef21d8d7afe6df17",
+  "latestHash" : "e99f81f3f8e461b0c1f758a0644ef524c3f47df60dd77bdbef21d8d7afe6df17",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "fac0df156ccd567de2a94d10494e03358cb19f2199a986feaf03c7740eea8e01"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0395e182d521bb9f5e2b524e86690bf5569d2f1141fddc81d8deb22b7a0e4ebed9"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://blocktrust.dev/"
+    }
+  ],
+  "context" : [
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6417,
+    "o" : 0
+  }
+}

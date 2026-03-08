@@ -1,0 +1,37 @@
+{
+  "did" : "did:prism:53d48a39f6d320ddc71f9a26d6c211b4ab02dafb082768ba91ae0f16f8ef0de1",
+  "latestHash" : "53d48a39f6d320ddc71f9a26d6c211b4ab02dafb082768ba91ae0f16f8ef0de1",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0257462fe70a1bfb3f09bd4d7214c7b0de4da85d8ca44967e24c937c75c5e1e9a3"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02505ffa9cd07a307ef554cb507ac197b3ad1947b9358588dcea8d71ad030345a2"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://example.com/"
+    }
+  ],
+  "context" : [
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17152,
+    "o" : 0
+  }
+}

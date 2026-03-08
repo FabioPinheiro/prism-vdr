@@ -1,0 +1,41 @@
+{
+  "id" : "did:prism:43a150a9056050152de2528b4a42b40a36cd2578e96e8eb453d4d1587d67ed6a",
+  "authentication" : [
+    {
+      "id" : "did:prism:43a150a9056050152de2528b4a42b40a36cd2578e96e8eb453d4d1587d67ed6a#key-1",
+      "controller" : "did:prism:43a150a9056050152de2528b4a42b40a36cd2578e96e8eb453d4d1587d67ed6a",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "BumIgo_Igzz4dEIqUWwrjfthUHMR6HiQJrE6Rv2XQv8",
+        "kid" : "did:prism:43a150a9056050152de2528b4a42b40a36cd2578e96e8eb453d4d1587d67ed6a#key-1"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:43a150a9056050152de2528b4a42b40a36cd2578e96e8eb453d4d1587d67ed6a#assertion-1",
+      "controller" : "did:prism:43a150a9056050152de2528b4a42b40a36cd2578e96e8eb453d4d1587d67ed6a",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "jDla-ZZ_AEMMG0a3XDkE4Goq1c_S9yQg-pWOJ2SM42I",
+        "kid" : "did:prism:43a150a9056050152de2528b4a42b40a36cd2578e96e8eb453d4d1587d67ed6a#assertion-1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "xxx",
+      "type" : "VerifiableCredentialService",
+      "serviceEndpoint" : "https://example.com/vc"
+    },
+    {
+      "id" : "xxx1",
+      "type" : "RevocationService",
+      "serviceEndpoint" : "https://example.com/revoke"
+    }
+  ]
+}

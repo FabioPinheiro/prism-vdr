@@ -1,0 +1,48 @@
+{
+  "did" : "did:prism:c92207b1cf7d67104218084a411fc00bb454400a25bc7203b677c6e0d1b8b767",
+  "latestHash" : "c92207b1cf7d67104218084a411fc00bb454400a25bc7203b677c6e0d1b8b767",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "4fb712915e77eb1d73e9476a40e67520b24eb9a7a0652df0f3842471228f88c7"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "assertion-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "32d1679b4f1a4142cc40ba8ae984742f6e95bc8a5f9b9d57fb4acc3bbec8c910"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0378d5266ee78fcecc14b46da30d348ef461c67764aa0718c5be55fb96c480da3f"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "d8c8d73c-ccc7-4a9c-ae6d-626ceeda1f3f",
+      "type" : "CredentialStatusService",
+      "serviceEndpoint" : "{\"issuedVCStatus\":\"https://example.com/status\"}"
+    },
+    {
+      "id" : "f266a158-895a-421f-8549-d119ef45af6c",
+      "type" : "NotificationService",
+      "serviceEndpoint" : "{\"issuedVCStatus\":\"https://example.com/notify\"}"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17304,
+    "o" : 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "did" : "did:prism:bc3df3d0c2fe7cf30e33a42bccbfbffdf4987b89e3579e6fc270102e1bb2d511",
+  "latestHash" : "bc3df3d0c2fe7cf30e33a42bccbfbffdf4987b89e3579e6fc270102e1bb2d511",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0273dc21b5fdd97b0ac8c9b505844a6167a090e63bfa2e4b27b867604b61b8df6f"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-22",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "add494ccd20125ddda3bdd05b7eb9b75333e5be1c8222792848e84b051f4fc5a"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomain",
+      "serviceEndpoint" : "https://url.from.form.com"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17060,
+    "o" : 0
+  }
+}

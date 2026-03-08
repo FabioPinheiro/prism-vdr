@@ -1,0 +1,37 @@
+{
+  "did" : "did:prism:f0520e46058945557239246a29ac92dbe9dba20a94e77fd4ab4bcca7cbf998a4",
+  "latestHash" : "f0520e46058945557239246a29ac92dbe9dba20a94e77fd4ab4bcca7cbf998a4",
+  "keys" : [
+    {
+      "UncompressedECKey" : {
+        "id" : "key1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "1ae5f9e927bbcf64724df5c2a070cc8d6cc80a82b0615f9cd94631041bd26350",
+        "y" : "d570002026cd016adc699c409e4fb4c285876d2cc78cb9b9e8c387d5bbd47574"
+      }
+    },
+    {
+      "UncompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "82679cf0347057943fc7bd4d2974295f629b3a633a5d17c66bfa9181fdf055ee",
+        "y" : "7e2b203f9f506b1b4ba46dbd26ce0d38359b40f457d965ec2c4f3e7b7ed12add"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "https://foo.bar.com",
+      "type" : "MediatorService",
+      "serviceEndpoint" : "https://foo.bar.com"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 2753,
+    "o" : 0
+  }
+}

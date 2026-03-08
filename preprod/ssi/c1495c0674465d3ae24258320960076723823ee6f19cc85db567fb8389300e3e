@@ -1,0 +1,38 @@
+{
+  "did" : "did:prism:c1495c0674465d3ae24258320960076723823ee6f19cc85db567fb8389300e3e",
+  "latestHash" : "c1495c0674465d3ae24258320960076723823ee6f19cc85db567fb8389300e3e",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "033dd9b248575df3e67f59c4da81535ede75d6d85c732605402e94a468b81972c4"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "41cba1e39a89c9a00e71eda78cc3ad0355dc091ed2c975bac908e51e89c3eff9"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomain",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/awesome"
+    }
+  ],
+  "context" : [
+    "https://www.w3.org/ns/did/v1",
+    "https://w3id.org/security/suites/jws-2020/v1"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17067,
+    "o" : 0
+  }
+}

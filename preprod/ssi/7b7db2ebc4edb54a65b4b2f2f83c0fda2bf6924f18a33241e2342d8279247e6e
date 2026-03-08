@@ -1,0 +1,42 @@
+{
+  "did" : "did:prism:7b7db2ebc4edb54a65b4b2f2f83c0fda2bf6924f18a33241e2342d8279247e6e",
+  "latestHash" : "7b7db2ebc4edb54a65b4b2f2f83c0fda2bf6924f18a33241e2342d8279247e6e",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "8303de18d949f9f8885cee659dfd1d4c924baae8321dac624afd9238b8b2ad2b"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "020321d27a3213abe22086daa891318b5947a9277410673425b73b803d204d2821"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "service-1",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://opn.blocktrust.dev/"
+    },
+    {
+      "id" : "agent-base-url",
+      "type" : "LinkedResourceV1",
+      "serviceEndpoint" : "http://cloud-agent:8085"
+    }
+  ],
+  "context" : [
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 16950,
+    "o" : 0
+  }
+}

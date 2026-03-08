@@ -1,0 +1,48 @@
+{
+  "did" : "did:prism:43a150a9056050152de2528b4a42b40a36cd2578e96e8eb453d4d1587d67ed6a",
+  "latestHash" : "43a150a9056050152de2528b4a42b40a36cd2578e96e8eb453d4d1587d67ed6a",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "06e988828fc8833cf874422a516c2b8dfb61507311e8789026b13a46fd9742ff"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "assertion-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "8c395af9967f00430c1b46b75c3904e06a2ad5cfd2f72420fa958e27648ce362"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02a03cb79cfcd51f20022ab8d8622d4f8ddc5a7c54a94f084aab00416d93e4db83"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "xxx",
+      "type" : "VerifiableCredentialService",
+      "serviceEndpoint" : "https://example.com/vc"
+    },
+    {
+      "id" : "xxx1",
+      "type" : "RevocationService",
+      "serviceEndpoint" : "https://example.com/revoke"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17255,
+    "o" : 0
+  }
+}

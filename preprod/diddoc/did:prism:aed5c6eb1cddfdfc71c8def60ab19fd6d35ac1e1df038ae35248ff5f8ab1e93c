@@ -1,0 +1,24 @@
+{
+  "id" : "did:prism:aed5c6eb1cddfdfc71c8def60ab19fd6d35ac1e1df038ae35248ff5f8ab1e93c",
+  "authentication" : [
+    {
+      "id" : "did:prism:aed5c6eb1cddfdfc71c8def60ab19fd6d35ac1e1df038ae35248ff5f8ab1e93c#key1",
+      "controller" : "did:prism:aed5c6eb1cddfdfc71c8def60ab19fd6d35ac1e1df038ae35248ff5f8ab1e93c",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "EC",
+        "crv" : "secp256k1",
+        "x" : "WFG1eGnKQ9QkQ4jnYOrVu0yc9ezarITvwg4w5uOIAMM",
+        "y" : "RbuOjOybtIdQ8XIYhfVc0bzChCIqjYYA9mJKNKtAwg4",
+        "kid" : "did:prism:aed5c6eb1cddfdfc71c8def60ab19fd6d35ac1e1df038ae35248ff5f8ab1e93c#key1"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "https://bg65j.atalaprism.io/prism-agent",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "https://bg65j.atalaprism.io/prism-agent"
+    }
+  ]
+}
