@@ -30,19 +30,25 @@
   ],
   "service" : [
     {
-      "id" : "https://foo.bar.com",
+      "id" : "did:prism:3abfcb0c9a9f101a9b503a086f72c7695336f5aea43844b261e87da9a8067721#https://foo.bar.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://foo.bar.com/\"]"
+      "serviceEndpoint" : [
+        "https://foo.bar.com/"
+      ]
     },
     {
-      "id" : "https://update.com",
+      "id" : "did:prism:3abfcb0c9a9f101a9b503a086f72c7695336f5aea43844b261e87da9a8067721#https://update.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://update.com/\"]"
+      "serviceEndpoint" : [
+        "https://update.com/"
+      ]
     },
     {
-      "id" : "https://remove.com",
+      "id" : "did:prism:3abfcb0c9a9f101a9b503a086f72c7695336f5aea43844b261e87da9a8067721#https://remove.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://remove.com/\"]"
+      "serviceEndpoint" : [
+        "https://remove.com/"
+      ]
     }
   ]
 }

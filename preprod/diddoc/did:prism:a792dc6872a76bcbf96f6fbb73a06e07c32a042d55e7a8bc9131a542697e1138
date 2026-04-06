@@ -1,0 +1,51 @@
+{
+  "id" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138",
+  "authentication" : [
+    {
+      "id" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138#key-0-Authentication-0",
+      "controller" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "5U8GLwEJdzlX6IsZdFgX_DHivzZjXJ7Rm1d-xfqcREE",
+        "kid" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138#key-0-Authentication-0"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138#key-0-Issuing-0",
+      "controller" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "pPjoliySzZ7ktInG6p33Eas3dKo4qQDXBIPPndlEJ6I",
+        "kid" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138#key-0-Issuing-0"
+      }
+    }
+  ],
+  "keyAgreement" : [
+    {
+      "id" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138#key-0-KeyAgreement-0",
+      "controller" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "X25519",
+        "x" : "wPAse9zefGQGnjDaGVxE-NxSCiROVPTPbn0NW6rJnQE",
+        "kid" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138#key-0-KeyAgreement-0"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "did:prism:a792dc6872a76bcbf96f6fbb73a06e07c32a042d55e7a8bc9131a542697e1138#didcomm",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : {
+        "uri" : "https://did.fabiopinheiro.com"
+      }
+    }
+  ]
+}

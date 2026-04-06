@@ -28,9 +28,13 @@
   ],
   "service" : [
     {
-      "id" : "service-1",
+      "id" : "did:prism:75c3e6839f489d5fe80d657875124b7bcbed605fcd9f9631e708773c55a1d28d#service-1",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "{\"url\":\"https://example.com\",\"filename\":\"my-did-document.json\",\"year\":2025}"
+      "serviceEndpoint" : {
+        "url" : "https://example.com",
+        "filename" : "my-did-document.json",
+        "year" : 2025
+      }
     }
   ]
 }

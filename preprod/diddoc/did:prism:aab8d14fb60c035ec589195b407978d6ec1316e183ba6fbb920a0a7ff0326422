@@ -1,0 +1,25 @@
+{
+  "id" : "did:prism:aab8d14fb60c035ec589195b407978d6ec1316e183ba6fbb920a0a7ff0326422",
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:aab8d14fb60c035ec589195b407978d6ec1316e183ba6fbb920a0a7ff0326422#key-0-Issuing-0",
+      "controller" : "did:prism:aab8d14fb60c035ec589195b407978d6ec1316e183ba6fbb920a0a7ff0326422",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "GKJfOkIImunUHy6kBUm_BFwSAhkjpLdgSH0CN-DjbkA",
+        "kid" : "did:prism:aab8d14fb60c035ec589195b407978d6ec1316e183ba6fbb920a0a7ff0326422#key-0-Issuing-0"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "did:prism:aab8d14fb60c035ec589195b407978d6ec1316e183ba6fbb920a0a7ff0326422#endpoint1",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : {
+        "uri" : "https://did.fabiopinheiro.com/"
+      }
+    }
+  ]
+}

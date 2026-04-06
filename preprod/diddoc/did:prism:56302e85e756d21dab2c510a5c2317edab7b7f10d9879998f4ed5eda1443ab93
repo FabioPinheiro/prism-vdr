@@ -28,14 +28,18 @@
   ],
   "service" : [
     {
-      "id" : "53056e05-210e-48f2-a08b-c9143d75cdc5",
+      "id" : "did:prism:56302e85e756d21dab2c510a5c2317edab7b7f10d9879998f4ed5eda1443ab93#53056e05-210e-48f2-a08b-c9143d75cdc5",
       "type" : "CredentialStatusService",
-      "serviceEndpoint" : "{\"issuedVCStatus\":\"https://localhost:7700/Verification/StatusCheck\"}"
+      "serviceEndpoint" : {
+        "issuedVCStatus" : "https://localhost:7700/Verification/StatusCheck"
+      }
     },
     {
-      "id" : "9ac601fe-ae43-4959-b983-722db148a135",
+      "id" : "did:prism:56302e85e756d21dab2c510a5c2317edab7b7f10d9879998f4ed5eda1443ab93#9ac601fe-ae43-4959-b983-722db148a135",
       "type" : "NotificationService",
-      "serviceEndpoint" : "{\"issuedVCStatus\":\"https://localhost:7700/Verification/api/Notify\"}"
+      "serviceEndpoint" : {
+        "issuedVCStatus" : "https://localhost:7700/Verification/api/Notify"
+      }
     }
   ]
 }

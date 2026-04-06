@@ -30,9 +30,11 @@
   ],
   "service" : [
     {
-      "id" : "service-1",
+      "id" : "did:prism:99ace3d8f15be202e30086fba2383b591e24f0a59a2fa680ae00194c4823bfa9#service-1",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://csign.io/agreement/128/0x7e4d414b2eb991d8c25e8b508e718d6773c02eab84febfc44ebbb6c71cc1c5ae\"]"
+      "serviceEndpoint" : [
+        "https://csign.io/agreement/128/0x7e4d414b2eb991d8c25e8b508e718d6773c02eab84febfc44ebbb6c71cc1c5ae"
+      ]
     }
   ]
 }

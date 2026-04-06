@@ -30,24 +30,32 @@
   ],
   "service" : [
     {
-      "id" : "https://foo.bar.com",
+      "id" : "did:prism:76b8001d5a87070834092793f5f9d4702ac24e25f6aea60f11382819551c492c#https://foo.bar.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://foo.bar.com/\"]"
+      "serviceEndpoint" : [
+        "https://foo.bar.com/"
+      ]
     },
     {
-      "id" : "https://update.com",
+      "id" : "did:prism:76b8001d5a87070834092793f5f9d4702ac24e25f6aea60f11382819551c492c#https://update.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://bar.foo.com/\"]"
+      "serviceEndpoint" : [
+        "https://bar.foo.com/"
+      ]
     },
     {
-      "id" : "https://remove.com",
+      "id" : "did:prism:76b8001d5a87070834092793f5f9d4702ac24e25f6aea60f11382819551c492c#https://remove.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://remove.com/\"]"
+      "serviceEndpoint" : [
+        "https://remove.com/"
+      ]
     },
     {
-      "id" : "https://new.service.com",
+      "id" : "did:prism:76b8001d5a87070834092793f5f9d4702ac24e25f6aea60f11382819551c492c#https://new.service.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://new.service.com/\"]"
+      "serviceEndpoint" : [
+        "https://new.service.com/"
+      ]
     }
   ]
 }

@@ -44,9 +44,11 @@
   ],
   "service" : [
     {
-      "id" : "service-1",
+      "id" : "did:prism:caa215a6695186ce068c16392fbc4319b2b710f207fbcb3ddde60061e8e11c5a#service-1",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://some.service/\"]"
+      "serviceEndpoint" : [
+        "https://some.service/"
+      ]
     }
   ]
 }

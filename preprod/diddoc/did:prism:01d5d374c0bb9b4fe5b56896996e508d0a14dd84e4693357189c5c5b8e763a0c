@@ -30,19 +30,25 @@
   ],
   "service" : [
     {
-      "id" : "https://foo.bar.com",
+      "id" : "did:prism:01d5d374c0bb9b4fe5b56896996e508d0a14dd84e4693357189c5c5b8e763a0c#https://foo.bar.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://foo.bar.com/\"]"
+      "serviceEndpoint" : [
+        "https://foo.bar.com/"
+      ]
     },
     {
-      "id" : "https://update.com",
+      "id" : "did:prism:01d5d374c0bb9b4fe5b56896996e508d0a14dd84e4693357189c5c5b8e763a0c#https://update.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://bar.foo.com/\"]"
+      "serviceEndpoint" : [
+        "https://bar.foo.com/"
+      ]
     },
     {
-      "id" : "https://remove.com",
+      "id" : "did:prism:01d5d374c0bb9b4fe5b56896996e508d0a14dd84e4693357189c5c5b8e763a0c#https://remove.com",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://remove.com/\"]"
+      "serviceEndpoint" : [
+        "https://remove.com/"
+      ]
     }
   ]
 }

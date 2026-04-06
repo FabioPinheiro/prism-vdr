@@ -28,14 +28,18 @@
   ],
   "service" : [
     {
-      "id" : "3ae74a75-fb16-4714-9d4c-0363b9ea2578",
+      "id" : "did:prism:b1d8874162b05d4ea522974da06703b0b38146ab7dbd8242b3622225679760fb#3ae74a75-fb16-4714-9d4c-0363b9ea2578",
       "type" : "CredentialStatusService",
-      "serviceEndpoint" : "{\"issuedVCStatus\":\"https://example.com/status\"}"
+      "serviceEndpoint" : {
+        "issuedVCStatus" : "https://example.com/status"
+      }
     },
     {
-      "id" : "f4204008-d760-417c-8fd6-8b89678b494d",
+      "id" : "did:prism:b1d8874162b05d4ea522974da06703b0b38146ab7dbd8242b3622225679760fb#f4204008-d760-417c-8fd6-8b89678b494d",
       "type" : "NotificationService",
-      "serviceEndpoint" : "{\"issuedVCStatus\":\"https://example.com/notify\"}"
+      "serviceEndpoint" : {
+        "issuedVCStatus" : "https://example.com/notify"
+      }
     }
   ]
 }

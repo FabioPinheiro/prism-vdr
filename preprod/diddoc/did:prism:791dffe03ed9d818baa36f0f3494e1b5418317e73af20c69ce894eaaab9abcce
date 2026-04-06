@@ -30,12 +30,14 @@
   ],
   "service" : [
     {
-      "id" : "service-1",
+      "id" : "did:prism:791dffe03ed9d818baa36f0f3494e1b5418317e73af20c69ce894eaaab9abcce#service-1",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://csign.io/agreement/27/0x77299d0bb7f9ec1af116225fa2bad671384f102b6d849498be593f67aac63e53\"]"
+      "serviceEndpoint" : [
+        "https://csign.io/agreement/27/0x77299d0bb7f9ec1af116225fa2bad671384f102b6d849498be593f67aac63e53"
+      ]
     },
     {
-      "id" : "agent-base-url",
+      "id" : "did:prism:791dffe03ed9d818baa36f0f3494e1b5418317e73af20c69ce894eaaab9abcce#agent-base-url",
       "type" : "LinkedResourceV1",
       "serviceEndpoint" : "http://csign.io:8084/cloud-agent"
     }

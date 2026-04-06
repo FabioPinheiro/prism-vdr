@@ -30,9 +30,11 @@
   ],
   "service" : [
     {
-      "id" : "service-1",
+      "id" : "did:prism:7818333872399d98d2264aa07a27f0e49c5446cc0aeff337c842fb8a48944fc0#service-1",
       "type" : "LinkedDomains",
-      "serviceEndpoint" : "[\"https://m4.csign.io/\"]"
+      "serviceEndpoint" : [
+        "https://m4.csign.io/"
+      ]
     }
   ]
 }

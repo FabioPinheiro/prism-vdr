@@ -61,7 +61,14 @@ Data inside the folder:
   - represent all PRISM Events relative to an VDR reference (`events`).
   - index by the identity.
 
-## Run Local 
+## Run Local with Coursier
+
+```shell
+  cs launch app.fmgp::cardano-prism-cli:0.1.0-M44 -M fmgp.did.method.prism.cli.PrismCli -- \
+    indexer in-memory --token preprod9EGSSMf6oWb81qoi8eW65iWaQuHJ1HwB  ./preprod
+```
+
+## Run Local DOCKER (OLD)
 
 ```shell
 docker run --rm -it --entrypoint "sh" --memory="300m" --cpus="1.0" \
@@ -89,9 +96,6 @@ mkdir vdr
 
 - Blockchain rollback dectetion.
 - There is no rollback Mechanism (support to support rollback).
-- Using docker to run the Indexer may be overkill.
-- Missing index map Event Hash other the Previous relative Event Hash.
-  - Implement a constant memory `O(1)` logic to process SSI. (right now is O(number of events))
 - Remove the support for cbor metadata and that encodes PRISM operation using text (hex).
 - The folder `diddoc` have the DID Document but maybe would be more useful to replace with the did-resolution-result https://w3c.github.io/did-resolution/#did-resolution-result
   - the field `didResolutionMetadata` ... will be contraceptive that can be empty
@@ -99,32 +103,9 @@ mkdir vdr
     - created, updated, deactivated
 - Github action:
   -Fix unverified commit. Need GPT
-- Questions:
-  - should we write the Hash of the PRISM Events in the ops files? (**debug purpose**)
-  - should we fetch relevant transactions and store info about it.
-  - support for transactions with multiple labels (assuming this is possible)
 
 ## Notes
 
-### mainnet
-
-`mainnet` have :
-- 6455 Transactions
-- 9831 PRISM events/operations
-- 312 SSI entries
-
-### preprod
-
-Running from scratch it took `Total time: 375 s (06:15), completed Feb 11, 2025, 8:55:59 PM`
-Most of the time was FileSystem IO and also a bit of Network IO.
-
-`preprod` have :
-- 16938 Transactions
-- 275569 PRISM events/operations
-- 71408 SSI entries
-
-
----
 
 ### FileSystem storage
 Using the normal FileSystem as storage is also super inefficient.

@@ -28,14 +28,18 @@
   ],
   "service" : [
     {
-      "id" : "ca4f89a0-48a7-4f0d-8061-c4e4878520f8",
+      "id" : "did:prism:de8ab741af0077e2e4349786c2f731d3805807f2dec89662124caaa21af32b7f#ca4f89a0-48a7-4f0d-8061-c4e4878520f8",
       "type" : "CredentialStatusService",
-      "serviceEndpoint" : "{\"issuedVCStatus\":\"https://localhost:6600/Verification/StatusCheck\"}"
+      "serviceEndpoint" : {
+        "issuedVCStatus" : "https://localhost:6600/Verification/StatusCheck"
+      }
     },
     {
-      "id" : "54a9e08b-c7b0-46f5-8b61-e102066abfbd",
+      "id" : "did:prism:de8ab741af0077e2e4349786c2f731d3805807f2dec89662124caaa21af32b7f#54a9e08b-c7b0-46f5-8b61-e102066abfbd",
       "type" : "NotificationService",
-      "serviceEndpoint" : "{\"issuedVCStatus\":\"https://localhost:6600/api/Notify\"}"
+      "serviceEndpoint" : {
+        "issuedVCStatus" : "https://localhost:6600/api/Notify"
+      }
     }
   ]
 }

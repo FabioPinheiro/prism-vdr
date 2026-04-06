@@ -1,0 +1,35 @@
+{
+  "did" : "did:prism:aab8d14fb60c035ec589195b407978d6ec1316e183ba6fbb920a0a7ff0326422",
+  "latestHash" : "a7135d70d501877c93c5fb46bb72546f40dcf987f38c34ed5375cf96ccde0c0e",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "03ebe0934672da51ca01da94d278376a204e0e73a8d235c290bc2d5f1a629f8aec"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-0-Issuing-0",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "18a25f3a42089ae9d41f2ea40549bf045c12021923a4b760487d0237e0e36e40"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "endpoint1",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "{\"uri\":\"https://did.fabiopinheiro.com/\"}"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17406,
+    "o" : 1
+  }
+}

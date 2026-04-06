@@ -36,7 +36,7 @@ jobs:
             echo The secret \"BLOCKFROST_APIKEY_MAINNET\" has not been setup. Skipping step
             echo To setup go to \"settings \> secrets \> actions\" to create it.
           else
-            cs launch app.fmgp::cardano-prism-cli:0.1.0-M40 -M fmgp.did.method.prism.cli.PrismCli -- indexer in-memory --token ${{ secrets.BLOCKFROST_APIKEY_MAINNET }}  ./mainnet
+            cs launch app.fmgp::cardano-prism-cli:0.1.0-M44 -M fmgp.did.method.prism.cli.PrismCli -- indexer in-memory --token ${{ secrets.BLOCKFROST_APIKEY_MAINNET }}  ./mainnet
           fi
       - name: Coursier Run Indexer for preview
         run: |
@@ -44,15 +44,15 @@ jobs:
             echo The secret \"BLOCKFROST_APIKEY_PREVIEW\" has not been setup. Skipping step
             echo To setup go to \"settings \> secrets \> actions\" to create it.
           else
-            cs launch app.fmgp::cardano-prism-cli:0.1.0-M40 -M fmgp.did.method.prism.cli.PrismCli -- indexer in-memory --token ${{ secrets.BLOCKFROST_APIKEY_PREVIEW }}  ./preview
+            cs launch app.fmgp::cardano-prism-cli:0.1.0-M44 -M fmgp.did.method.prism.cli.PrismCli -- indexer in-memory --token ${{ secrets.BLOCKFROST_APIKEY_PREVIEW }}  ./preview
           fi
-      - name: Coursier Run Indexer for mainnet
+      - name: Coursier Run Indexer for preprod
         run: |
           if [[ '${{ secrets.BLOCKFROST_APIKEY_PREPROD }}' == '' ]]; then
             echo The secret \"BLOCKFROST_APIKEY_PREPROD\" has not been setup. Skipping step
             echo To setup go to \"settings \> secrets \> actions\" to create it.
           else
-            cs launch app.fmgp::cardano-prism-cli:0.1.0-M40 -M fmgp.did.method.prism.cli.PrismCli -- indexer in-memory --token ${{ secrets.BLOCKFROST_APIKEY_PREPROD }}  ./preprod
+            cs launch app.fmgp::cardano-prism-cli:0.1.0-M44 -M fmgp.did.method.prism.cli.PrismCli -- indexer in-memory --token ${{ secrets.BLOCKFROST_APIKEY_PREPROD }}  ./preprod
           fi
 
 

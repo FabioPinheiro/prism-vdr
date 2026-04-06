@@ -2,14 +2,18 @@
   "id" : "did:prism:fa0b4fd020253c5eda719cb668a53f3c70b8b1d3ef56c38dce6cabaac0208eff",
   "service" : [
     {
-      "id" : "endpoint2",
+      "id" : "did:prism:fa0b4fd020253c5eda719cb668a53f3c70b8b1d3ef56c38dce6cabaac0208eff#endpoint2",
       "type" : "DIDCommMessaging",
-      "serviceEndpoint" : "{\"uri\":\"wss://localhost:8080/ws\"}"
+      "serviceEndpoint" : {
+        "uri" : "wss://localhost:8080/ws"
+      }
     },
     {
-      "id" : "endpoint1",
+      "id" : "did:prism:fa0b4fd020253c5eda719cb668a53f3c70b8b1d3ef56c38dce6cabaac0208eff#endpoint1",
       "type" : "DIDCommMessaging",
-      "serviceEndpoint" : "{\"uri\":\"https://localhost:8080\"}"
+      "serviceEndpoint" : {
+        "uri" : "https://localhost:8080"
+      }
     }
   ]
 }
