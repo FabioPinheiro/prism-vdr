@@ -1,0 +1,43 @@
+{
+  "did" : "did:prism:35fbaf7f8a68e927feb89dc897f4edc24ca8d7510261829e4834d931e947e6ca",
+  "latestHash" : "d2c15071c2b6ae352e12420b77615e1c82aaa2b57e92d3f5137f25a0a853d4b0",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "023f7c75c9e5fba08fea1640d6faa3f8dc0151261d2b56026d46ddcbe1fc5a5bbb"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "comm",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "191d5be225a4f0c6c4614dcbc5565ce5828c3fe5082e62db76732534f547c723"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "auth",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "264676fadb76434f75ccfc51312cd6a5615476e32a481d5b60f4e60ce63b20fa"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "didcomm",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "{\"uri\":\"https://discord.fabiopinheiro.com\"}"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6814,
+    "o" : 1
+  }
+}
