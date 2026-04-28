@@ -1,0 +1,38 @@
+{
+  "did" : "did:prism:8e710c6c2ba7d6c0f78ea25c1d50dc920f04d6a948a4017d9670f55c4128e956",
+  "latestHash" : "8e710c6c2ba7d6c0f78ea25c1d50dc920f04d6a948a4017d9670f55c4128e956",
+  "keys" : [
+    {
+      "UncompressedECKey" : {
+        "id" : "master-0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "810f8e5aa68e44984e6b12774b1573b47a350b25e0e23318f8172b36139a72a0",
+        "y" : "b176ab201995dd6767edbb30b444d4e30ceb6e7fcc164a64d5d5f1fae4594784"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "authentication-0",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "6c1a8a8488ce809ac1beac0e536fdcd38d7d177c5014b905cd9b16f8ed20d136"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "agreement-0",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "b6037cc93463ff27bf8f4f1319d4ecfbb4f2f97a485d8e065a8e5a1dd5f55046"
+      }
+    }
+  ],
+  "services" : [],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6818,
+    "o" : 0
+  }
+}
