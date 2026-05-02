@@ -1,0 +1,51 @@
+{
+  "did" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df",
+  "latestHash" : "55a4070cfd252d2376a17eca29565f38d8279f0dce0daa2d7ea5f363d435775c",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "master",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02494c75fc7e4ef3197f33c12ac52f53da76cda32c2e58ee36dff45465f77ca2ca"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "iss",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "94716a244bd3677f47037712d53fed28eda3438f9b34a2652d097932625ff1bc"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "auth",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "3ef92a989afdf327a2bda7fd9c96fcb102526a8d3024d2b283592c234965a5b8"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "comm",
+        "usage" : "KeyAgreementKeyUsage",
+        "curve" : "X25519",
+        "data" : "44163b53a71b53375099733a572992c05cc4786a46e9944c87358fd75e61a42a"
+      }
+    }
+  ],
+  "services" : [
+    {
+      "id" : "e1",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : "{\"uri\":\"https://kyc.fabiopinheiro.com/\"}"
+    }
+  ],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 6821,
+    "o" : 1
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df",
+  "authentication" : [
+    {
+      "id" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df#iss",
+      "controller" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "lHFqJEvTZ39HA3cS1T_tKO2jQ4-bNKJlLQl5MmJf8bw",
+        "kid" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df#iss"
+      }
+    },
+    {
+      "id" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df#auth",
+      "controller" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "PvkqmJr98yeivaf9nJb8sQJSao0wJNKyg1ksI0llpbg",
+        "kid" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df#auth"
+      }
+    }
+  ],
+  "keyAgreement" : [
+    {
+      "id" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df#comm",
+      "controller" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "X25519",
+        "x" : "RBY7U6cbUzdQmXM6VymSwFzEeGpG6ZRMhzWP115hpCo",
+        "kid" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df#comm"
+      }
+    }
+  ],
+  "service" : [
+    {
+      "id" : "did:prism:9f124ca5da81662f247774c40bb2b47780d7a778703715d0772f6897d63644df#e1",
+      "type" : "DIDCommMessaging",
+      "serviceEndpoint" : {
+        "uri" : "https://kyc.fabiopinheiro.com/"
+      }
+    }
+  ]
+}
