@@ -1,0 +1,42 @@
+{
+  "id" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2",
+  "authentication" : [
+    {
+      "id" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2#authentication-0",
+      "controller" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "vi3BBW7i8TrFtS7g-WOmdAe5CHxmiJ_NdowoGAEVr6g",
+        "kid" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2#authentication-0"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2#issuing-0",
+      "controller" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "8-ZTyiPf7gFvsfdptnhUyXxBwu82lkBNhiqHFk70eEo",
+        "kid" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2#issuing-0"
+      }
+    }
+  ],
+  "keyAgreement" : [
+    {
+      "id" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2#agreement-0",
+      "controller" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "X25519",
+        "x" : "TOkz-KbD0Kk58HoUPt2JChJTkFZXF9vHNyjftB1Xnh4",
+        "kid" : "did:prism:d7c2cae8f461baa778cf60a81957e52c3a444ac52292dedbf8c08dc5fa55eea2#agreement-0"
+      }
+    }
+  ]
+}
