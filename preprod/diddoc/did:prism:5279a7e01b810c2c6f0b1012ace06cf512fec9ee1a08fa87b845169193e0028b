@@ -1,0 +1,29 @@
+{
+  "id" : "did:prism:5279a7e01b810c2c6f0b1012ace06cf512fec9ee1a08fa87b845169193e0028b",
+  "authentication" : [
+    {
+      "id" : "did:prism:5279a7e01b810c2c6f0b1012ace06cf512fec9ee1a08fa87b845169193e0028b#auth-1",
+      "controller" : "did:prism:5279a7e01b810c2c6f0b1012ace06cf512fec9ee1a08fa87b845169193e0028b",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "wpjF-KjkoAC5J6jLAYy7AJhwlnf_ARfwG9kBRaHU6vA",
+        "kid" : "did:prism:5279a7e01b810c2c6f0b1012ace06cf512fec9ee1a08fa87b845169193e0028b#auth-1"
+      }
+    }
+  ],
+  "assertionMethod" : [
+    {
+      "id" : "did:prism:5279a7e01b810c2c6f0b1012ace06cf512fec9ee1a08fa87b845169193e0028b#issue-1",
+      "controller" : "did:prism:5279a7e01b810c2c6f0b1012ace06cf512fec9ee1a08fa87b845169193e0028b",
+      "type" : "JsonWebKey2020",
+      "publicKeyJwk" : {
+        "kty" : "OKP",
+        "crv" : "Ed25519",
+        "x" : "3gCvMiCHQDA0E5uh_aBcYlAvX-6-sbu4oe12dWfgDOU",
+        "kid" : "did:prism:5279a7e01b810c2c6f0b1012ace06cf512fec9ee1a08fa87b845169193e0028b#issue-1"
+      }
+    }
+  ]
+}

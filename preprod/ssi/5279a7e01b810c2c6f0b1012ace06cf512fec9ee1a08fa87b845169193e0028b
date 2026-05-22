@@ -1,0 +1,39 @@
+{
+  "did" : "did:prism:5279a7e01b810c2c6f0b1012ace06cf512fec9ee1a08fa87b845169193e0028b",
+  "latestHash" : "5279a7e01b810c2c6f0b1012ace06cf512fec9ee1a08fa87b845169193e0028b",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "auth-1",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "c298c5f8a8e4a000b927a8cb018cbb0098709677ff0117f01bd90145a1d4eaf0"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "issue-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "de00af322087403034139ba1fda05c62502f5feebeb1bbb8a1ed767567e00ce5"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "0251b05ab3169a5bdd8fe3a88b9e43ee674dcd69736b2119e661d97113af7417c1"
+      }
+    }
+  ],
+  "services" : [],
+  "context" : [
+    "https://didcomm.org/messaging/contexts/v2"
+  ],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17413,
+    "o" : 0
+  }
+}
