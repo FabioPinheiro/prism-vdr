@@ -1,0 +1,37 @@
+{
+  "did" : "did:prism:82c998173dc2a3ba931792aa3fd126b79c5f041754db507ee21606f6dadc8f2a",
+  "latestHash" : "82c998173dc2a3ba931792aa3fd126b79c5f041754db507ee21606f6dadc8f2a",
+  "keys" : [
+    {
+      "CompressedECKey" : {
+        "id" : "key-1",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "02549fc4e0e051a2607a13f99424a07b931961a6ba551608db28f986c346db434f"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "key-2",
+        "usage" : "AuthenticationKeyUsage",
+        "curve" : "Ed25519",
+        "data" : "76390314cb89d6b131c23ca05c1bdc3c1f61e513e4492674bf8e72ab39985b58"
+      }
+    },
+    {
+      "CompressedECKey" : {
+        "id" : "master0",
+        "usage" : "MasterKeyUsage",
+        "curve" : "secp256k1",
+        "data" : "025140766f26141703c8f0a77c643897072a53d0a7077190eee8bb123ac8790b56"
+      }
+    }
+  ],
+  "services" : [],
+  "context" : [],
+  "disabled" : false,
+  "cursor" : {
+    "b" : 17423,
+    "o" : 0
+  }
+}
