@@ -1,6 +1,6 @@
 {
   "did" : "did:prism:82c998173dc2a3ba931792aa3fd126b79c5f041754db507ee21606f6dadc8f2a",
-  "latestHash" : "82c998173dc2a3ba931792aa3fd126b79c5f041754db507ee21606f6dadc8f2a",
+  "latestHash" : "88f031f84e40e64e0d1219f5a53204c4a1ff8bbc73023a5bda8926f26742e6b0",
   "keys" : [
     {
       "CompressedECKey" : {
@@ -27,11 +27,17 @@
       }
     }
   ],
-  "services" : [],
+  "services" : [
+    {
+      "id" : "lab-verifier",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : "[\"https://lab.example.org/\"]"
+    }
+  ],
   "context" : [],
   "disabled" : false,
   "cursor" : {
-    "b" : 17423,
+    "b" : 17424,
     "o" : 0
   }
 }

@@ -26,5 +26,14 @@
         "kid" : "did:prism:82c998173dc2a3ba931792aa3fd126b79c5f041754db507ee21606f6dadc8f2a#key-1"
       }
     }
+  ],
+  "service" : [
+    {
+      "id" : "did:prism:82c998173dc2a3ba931792aa3fd126b79c5f041754db507ee21606f6dadc8f2a#lab-verifier",
+      "type" : "LinkedDomains",
+      "serviceEndpoint" : [
+        "https://lab.example.org/"
+      ]
+    }
   ]
 }
