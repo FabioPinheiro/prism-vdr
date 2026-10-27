@@ -1,6 +1,6 @@
 {
   "did" : "did:prism:2ec8273d31176eed94d2c1fe8a4323de3a89a88952ada252f6fe787a3eb02779",
-  "latestHash" : "5b4882a1ecf70dcfa87d1558f5ca7e9947c48508ac70a82b36a6ec2f27a44b21",
+  "latestHash" : "d4e11b4cbcbe6ccc0fc1e76fd6d065f1256fc590d3512f96c4e556bd5965ee81",
   "keys" : [
     {
       "UncompressedECKey" : {
@@ -28,13 +28,31 @@
         "x" : "9d80b1ecd3eaa414a86f4b0123c4119aaa55994e91408e311d0290e8a7d59459",
         "y" : "0288ace81fe7092a7eb3b20f185afbf22960fc14c4b904c1b3258dd02a46377b"
       }
+    },
+    {
+      "UncompressedECKey" : {
+        "id" : "key-3",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "146fc094c3a81053592ded8ffba6172e702bb88684c7ea02bb3e19718fb84543",
+        "y" : "0ecd8fdea55898f34529b620284114c78e38abe49f56f34beacc1c2f0acfa7ba"
+      }
+    },
+    {
+      "UncompressedECKey" : {
+        "id" : "key-4",
+        "usage" : "IssuingKeyUsage",
+        "curve" : "secp256k1",
+        "x" : "2a3abd5821a121b29db2191764b73d4fa21ce4ec955f994cb6601414417118a9",
+        "y" : "076cb0071cee79bd60c8b28501156537a7d4edfcb01407ac9c70000277f20f19"
+      }
     }
   ],
   "services" : [],
   "context" : [],
   "disabled" : false,
   "cursor" : {
-    "b" : 17428,
+    "b" : 17430,
     "o" : 0
   }
 }
